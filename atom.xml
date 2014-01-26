@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Yet another programming blog]]></title>
+  <link href="http://xaerxess.github.io/atom.xml" rel="self"/>
+  <link href="http://xaerxess.github.io/"/>
+  <updated>2014-01-27T00:07:30+01:00</updated>
+  <id>http://xaerxess.github.io/</id>
+  <author>
+    <name><![CDATA[Grzegorz Rożniecki]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[MANIFEST]]></title>
+    <link href="http://xaerxess.github.io/blog/2014/01/27/manifest.html"/>
+    <updated>2014-01-27T00:04:43+01:00</updated>
+    <id>http://xaerxess.github.io/blog/2014/01/27/manifest</id>
+    <content type="html"><![CDATA[<p><strong>Just a placeholder</strong>, nothing to see here <em>yet</em>.</p>
+
+<pre><code>---
+layout: post
+title: "MANIFEST"
+date: 2014-01-27 00:04:43 +0100
+comments: true
+categories: /dev/null meta
+---
+</code></pre>
+]]></content>
+  </entry>
+  
+</feed>
