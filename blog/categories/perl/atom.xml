@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Yet another programming blog]]></title>
-  <link href="http://xaerxess.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Perl | Yet another programming blog]]></title>
+  <link href="http://xaerxess.github.io/blog/categories/perl/atom.xml" rel="self"/>
   <link href="http://xaerxess.github.io/"/>
   <updated>2014-01-31T22:58:49+01:00</updated>
   <id>http://xaerxess.github.io/</id>
@@ -27,24 +27,6 @@
 <blockquote><p><code>Milla</code> is a <code>Dist::Zilla</code> profile. It is a collection of <code>Dist::Zilla</code> plugin bundle, minting profile and a command line wrapper. It is designed around the &ldquo;Convention over Configuration&rdquo; philosophy (Opinionated), and by default doesn&rsquo;t rewrite module files nor requires you to change your workflow at all (Unobtrusive).</p></blockquote>
 
 <p>I wanted to make and release a CPAN distribution with <code>milla</code> to compare it with pure <code>dzil</code> (I&rsquo;ll write my observations later in separate post). In just one sentence &ndash; <code>milla</code> is great: powerful like <code>dzil</code> but much simpler.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[MANIFEST]]></title>
-    <link href="http://xaerxess.github.io/blog/2014/01/27/manifest.html"/>
-    <updated>2014-01-27T00:04:43+01:00</updated>
-    <id>http://xaerxess.github.io/blog/2014/01/27/manifest</id>
-    <content type="html"><![CDATA[<p><strong>Just a placeholder</strong>, nothing to see here <em>yet</em>.</p>
-
-<pre><code>---
-layout: post
-title: "MANIFEST"
-date: 2014-01-27 00:04:43 +0100
-comments: true
-categories: /dev/null meta
----
-</code></pre>
 ]]></content>
   </entry>
   
