@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Perl | Yet another programming blog]]></title>
-  <link href="http://xaerxess.github.io/blog/categories/perl/atom.xml" rel="self"/>
+  <title><![CDATA[Category: JavaScript | Yet another programming blog]]></title>
+  <link href="http://xaerxess.github.io/blog/categories/javascript/atom.xml" rel="self"/>
   <link href="http://xaerxess.github.io/"/>
   <updated>2014-02-23T23:54:42+01:00</updated>
   <id>http://xaerxess.github.io/</id>
@@ -12,26 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[New module on CPAN - Task::BeLike::XAERXESS]]></title>
-    <link href="http://xaerxess.github.io/blog/2014/01/31/new-module-on-cpan-task-belike-xaerxess.html"/>
-    <updated>2014-01-31T22:38:02+01:00</updated>
-    <id>http://xaerxess.github.io/blog/2014/01/31/new-module-on-cpan-task-belike-xaerxess</id>
-    <content type="html"><![CDATA[<p><a href="https://metacpan.org/pod/perlbrew">Perlbrew</a> is a great module. I use it on every machine &ndash; it lets me install modern Perl versions on systems which ship with ancient a.k.a. good-old perls like 5.8 or even those from previous millennium. But there comes a problem &ndash; every perlbrewed perl has a separate environment and it lacks all CPAN goodies you installed and used earlier. Plus, if you have few machines and / or like to experiment with various operating systems (like me), you have to install modules you use again and again.</p>
-
-<p>To address this issue I&rsquo;ve released <a href="https://metacpan.org/release/Task-BeLike-XAERXESS"><code>Task::BeLike::XAERXESS</code></a>. It&rsquo;s a <a href="Task"><code>Task</code></a> module which has a simple purpose &ndash; it installs a module bundle <em>I</em> frequently use. What&rsquo;s more, because I uploaded it to <a href="http://www.cpan.org/">CPAN</a>, <em>you</em> can use install, try or modify it (the <a href="https://github.com/Xaerxess/Task-BeLike-XAERXESS">source code is on GitHub</a>).</p>
-
-<!-- more -->
-
-
-<p>I don&rsquo;t expect that anyone besides me will ever install and use <code>Task::BeLike::XAERXESS</code>, but there was another reason I made this module: do a module release with <a href="https://metacpan.org/pod/Dist::Milla"><code>Dist::Milla</code></a>. Let me cite:</p>
-
-<blockquote><p><code>Milla</code> is a <code>Dist::Zilla</code> profile. It is a collection of <code>Dist::Zilla</code> plugin bundle, minting profile and a command line wrapper. It is designed around the &ldquo;Convention over Configuration&rdquo; philosophy (Opinionated), and by default doesn&rsquo;t rewrite module files nor requires you to change your workflow at all (Unobtrusive).</p></blockquote>
-
-<p>I wanted to compare <code>milla</code> with pure <code>dzil</code> because I used latter once (to release my first module &ndash; <a href="https://metacpan.org/pod/Time::Duration::pl"><code>Time::Duration::pl</code></a>) and last few days there was <a href="http://blogs.perl.org/users/brian_d_foy/2012/08/should-my-perl-release-process-be-yours.html">quite much buzz</a> about <code>Dist::Zilla</code> being <a href="http://www.dagolden.com/index.php/2275/distzilla-haters-stop-your-whining/">suitable module releasing tool</a>. I&rsquo;ll write all my observations later in separate post, in just one sentence &ndash; <code>milla</code> is great: powerful like <code>dzil</code> but much simpler, it has everything <em>I</em> need to release a Perl module.</p>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[MANIFEST - or (future) content of this blog]]></title>
