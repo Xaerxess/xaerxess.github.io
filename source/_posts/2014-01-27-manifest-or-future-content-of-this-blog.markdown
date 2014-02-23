@@ -8,9 +8,7 @@ categories: meta blogging
 
 I'm starting a programming blog (again). I don't know if it'll be successful (where _successful_ means _updated regularly_ for me), but I'd like to begin with meta-post about what I _want_ to have here. Since I've been (proffesionally) working as a [Perl](http://www.perl.org/), Java and JavaScript developer for few years, vast amount of topics will be about these programming languages, with Perl being main one.
 
-<!-- more -->
-
-Short clarification here: Perl has a facinating community with really, really great developers, and if you look back to previous sentence you'll see that I only linked to Perl webpage, contrary to Java and JavaScript. The reason is simple - these two J* languages have no proper webpages and no _(open-source)_ community. You can go to java.**com** and click big red download button, but that's all. Google "java" and you'll see "Oracle" and "™" higher than "OpenJDK". Typing JavaScript in Google gives you **zero** language/community hits (let me just say that w3schools is first one); [ECMAScript](http://www.ecmascript.org/) is all about standards and many JS devs aren't be able to tell what ECMAScript is.
+Short clarification here: Perl has a facinating community with really, really great developers, and if you look back to previous sentence you'll see that I only linked to Perl webpage, contrary to Java and JavaScript. The reason is simple: <!-- more --> these two J* languages have no proper webpages and no _(open-source)_ community. You can go to java.**com** and click big red download button, but that's all. Google "java" and you'll see "Oracle" and "™" higher than "OpenJDK". Typing JavaScript in Google gives you **zero** language/community hits (let me just say that w3schools is first one); [ECMAScript](http://www.ecmascript.org/) is all about standards and many JS devs aren't be able to tell what ECMAScript is.
 
 On the other hand, googling "perl" gives you hits like:
 
