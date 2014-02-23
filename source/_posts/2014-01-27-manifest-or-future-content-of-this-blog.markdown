@@ -10,9 +10,20 @@ I'm starting a programming blog (again). I don't know if it'll be successful (wh
 
 <!-- more -->
 
-Short clarification here: Perl has a facinating community with really, really great developers, and if you look back to previous sentence you'll see that I only linked to Perl webpage, contrary to Java and JavaScript. The reason is simple - these two J* languages have no proper webpages and no (open-source) community. I mean you can go to java.**com** and click big red download button or go to another Oracle products, but that's all. Typing JavaScript in Google gives you **no** language and [ECMAScript](http://www.ecmascript.org/) is all about standards (and every other JS user won't be able to tell you what ECMAScript is). On the other hand, googling "perl" gives you hits like "The Perl Programming Language - www.perl.org", "Perl programming documentation - perldoc.perl.org", "The Comprehensive Perl Archive Network - www.cpan.org", "Strawberry Perl for Windows", "Perl Monks", "The Perl Foundation", from which **every single one is awesome** - if you've been using Perl for a while, you just can't _not_ appreciate whole ecosystem and say _Perl is dead_ because it's simply not true at all.
+Short clarification here: Perl has a facinating community with really, really great developers, and if you look back to previous sentence you'll see that I only linked to Perl webpage, contrary to Java and JavaScript. The reason is simple - these two J* languages have no proper webpages and no _(open-source)_ community. You can go to java.**com** and click big red download button, but that's all. Google "java" and you'll see "Oracle" and "™" higher than "OpenJDK". Typing JavaScript in Google gives you **zero** language/community hits (let me just say that w3schools is first one); [ECMAScript](http://www.ecmascript.org/) is all about standards and many JS devs aren't be able to tell what ECMAScript is.
 
-Besides writing about software engineering and programming languages, because I believe in free and open-source software and culture, I'll probably cover these topics, too. (Lately [I started contributing](https://github.com/Xaerxess) to various open-source projects, I've been using GNU/Linux [for almost nine years](http://linuxcounter.net/user/407987.html)). For now, I'd like to point you to [this blog post](http://pjf.id.au/ethics/2013/12/28/do-not-stifle-innovation.html) (by [@pjf](https://twitter.com/pjf)) which I fully agree with:
+On the other hand, googling "perl" gives you hits like:
+
+ - "The Perl Programming Language - www.perl.org",
+ - "Perl programming documentation - perldoc.perl.org",
+ - "The Comprehensive Perl Archive Network - www.cpan.org",
+ - "Strawberry Perl for Windows",
+ - "Perl Monks",
+ - "The Perl Foundation"
+
+from which **every single resource is awesome** - if you've been using Perl for a while, you just can't _not_ appreciate whole ecosystem and say _Perl is dead_ because it's simply not true at all.
+
+Besides writing about software engineering and programming languages, because I believe in free and open-source software and culture, I'll probably cover these topics, too. (Lately [I started contributing](https://github.com/Xaerxess) to various open-source projects, I've been using GNU/Linux [for almost nine years](http://linuxcounter.net/user/407987.html), I really enjoy both). For now, I'd like to point you to [this blog post](http://pjf.id.au/ethics/2013/12/28/do-not-stifle-innovation.html) (by [@pjf](https://twitter.com/pjf)) which I fully agree with:
 
 > "While I’ve always known open source software is great, I’m increasingly starting to appreciate that open source developers are also great."
 
