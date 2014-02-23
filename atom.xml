@@ -4,7 +4,7 @@
   <title><![CDATA[Yet another programming blog]]></title>
   <link href="http://xaerxess.github.io/atom.xml" rel="self"/>
   <link href="http://xaerxess.github.io/"/>
-  <updated>2014-02-23T21:46:14+01:00</updated>
+  <updated>2014-02-23T22:21:29+01:00</updated>
   <id>http://xaerxess.github.io/</id>
   <author>
     <name><![CDATA[Grzegorz Rożniecki]]></name>
@@ -35,7 +35,7 @@
     <link href="http://xaerxess.github.io/blog/2014/01/27/manifest-or-future-content-of-this-blog.html"/>
     <updated>2014-01-27T00:04:43+01:00</updated>
     <id>http://xaerxess.github.io/blog/2014/01/27/manifest-or-future-content-of-this-blog</id>
-    <content type="html"><![CDATA[<p>I&rsquo;m starting a programming blog (again). I don&rsquo;t know if it&rsquo;ll be successful (where successful = updated regularly), but I&rsquo;d like to start with meta-post about what I <em>want</em> to have here. Since I&rsquo;ve been (proffesionally) working as a <a href="http://www.perl.org/">Perl</a>, Java and JavaScript developer for few years, vast amount of topics will be about these programming languages, with Perl being main one.</p>
+    <content type="html"><![CDATA[<p>I&rsquo;m starting a programming blog (again). I don&rsquo;t know if it&rsquo;ll be successful (where <em>successful</em> means <em>updated regularly</em> for me), but I&rsquo;d like to begin with meta-post about what I <em>want</em> to have here. Since I&rsquo;ve been (proffesionally) working as a <a href="http://www.perl.org/">Perl</a>, Java and JavaScript developer for few years, vast amount of topics will be about these programming languages, with Perl being main one.</p>
 
 <!-- more -->
 
