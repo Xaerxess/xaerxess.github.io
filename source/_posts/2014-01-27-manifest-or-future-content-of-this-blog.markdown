@@ -6,7 +6,7 @@ comments: true
 categories: meta blogging
 ---
 
-I'm starting a programming blog (again). I don't know if it'll be successful (where successful = updated regularly), but I'd like to start with meta-post about what I _want_ to have here. Since I've been (proffesionally) working as a [Perl](http://www.perl.org/), Java and JavaScript developer for few years, vast amount of topics will be about these programming languages, with Perl being main one.
+I'm starting a programming blog (again). I don't know if it'll be successful (where _successful_ means _updated regularly_ for me), but I'd like to begin with meta-post about what I _want_ to have here. Since I've been (proffesionally) working as a [Perl](http://www.perl.org/), Java and JavaScript developer for few years, vast amount of topics will be about these programming languages, with Perl being main one.
 
 <!-- more -->
 
