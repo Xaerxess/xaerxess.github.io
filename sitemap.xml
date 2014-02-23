@@ -4,13 +4,13 @@
         <loc>
             http://xaerxess.github.io/blog/2014/01/27/manifest-or-future-content-of-this-blog.html
         </loc>
-        <lastmod>2014-02-23T22:20:06+01:00</lastmod>
+        <lastmod>2014-02-23T22:24:36+01:00</lastmod>
     </url>
     <url>
         <loc>
             http://xaerxess.github.io/blog/2014/01/31/new-module-on-cpan-task-belike-xaerxess.html
         </loc>
-        <lastmod>2014-02-05T23:46:40+01:00</lastmod>
+        <lastmod>2014-02-23T22:38:16+01:00</lastmod>
     </url>
     <url>
         <loc>http://xaerxess.github.io/assets/bootstrap/components.html</loc>
@@ -26,7 +26,7 @@
     </url>
     <url>
         <loc>http://xaerxess.github.io/assets/bootstrap/</loc>
-        <lastmod>2014-02-23T22:20:06+01:00</lastmod>
+        <lastmod>2014-02-23T22:38:16+01:00</lastmod>
     </url>
     <url>
         <loc>http://xaerxess.github.io/assets/bootstrap/customize.html</loc>
@@ -46,10 +46,10 @@
     </url>
     <url>
         <loc>http://xaerxess.github.io/</loc>
-        <lastmod>2014-02-23T22:20:06+01:00</lastmod>
+        <lastmod>2014-02-23T22:38:16+01:00</lastmod>
     </url>
     <url>
         <loc>http://xaerxess.github.io/blog/archives/</loc>
-        <lastmod>2014-02-23T22:20:06+01:00</lastmod>
+        <lastmod>2014-02-23T22:38:16+01:00</lastmod>
     </url>
 </urlset>
