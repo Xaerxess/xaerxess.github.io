@@ -4,7 +4,7 @@
   <title><![CDATA[Category: meta | Yet another programming blog]]></title>
   <link href="http://xaerxess.github.io/blog/categories/meta/atom.xml" rel="self"/>
   <link href="http://xaerxess.github.io/"/>
-  <updated>2014-02-23T21:18:56+01:00</updated>
+  <updated>2014-02-23T21:46:14+01:00</updated>
   <id>http://xaerxess.github.io/</id>
   <author>
     <name><![CDATA[Grzegorz Rożniecki]]></name>
@@ -23,9 +23,23 @@
 <!-- more -->
 
 
-<p>Short clarification here: Perl has a facinating community with really, really great developers, and if you look back to previous sentence you&rsquo;ll see that I only linked to Perl webpage, contrary to Java and JavaScript. The reason is simple &ndash; these two J* languages have no proper webpages and no (open-source) community. I mean you can go to java.<strong>com</strong> and click big red download button or go to another Oracle products, but that&rsquo;s all. Typing JavaScript in Google gives you <strong>no</strong> language and <a href="http://www.ecmascript.org/">ECMAScript</a> is all about standards (and every other JS user won&rsquo;t be able to tell you what ECMAScript is). On the other hand, googling &ldquo;perl&rdquo; gives you hits like &ldquo;The Perl Programming Language &ndash; www.perl.org&rdquo;, &ldquo;Perl programming documentation &ndash; perldoc.perl.org&rdquo;, &ldquo;The Comprehensive Perl Archive Network &ndash; www.cpan.org&rdquo;, &ldquo;Strawberry Perl for Windows&rdquo;, &ldquo;Perl Monks&rdquo;, &ldquo;The Perl Foundation&rdquo;, from which <strong>every single one is awesome</strong> &ndash; if you&rsquo;ve been using Perl for a while, you just can&rsquo;t <em>not</em> appreciate whole ecosystem and say <em>Perl is dead</em> because it&rsquo;s simply not true at all.</p>
+<p>Short clarification here: Perl has a facinating community with really, really great developers, and if you look back to previous sentence you&rsquo;ll see that I only linked to Perl webpage, contrary to Java and JavaScript. The reason is simple &ndash; these two J* languages have no proper webpages and no <em>(open-source)</em> community. You can go to java.<strong>com</strong> and click big red download button, but that&rsquo;s all. Google &ldquo;java&rdquo; and you&rsquo;ll see &ldquo;Oracle&rdquo; and &ldquo;™&rdquo; higher than &ldquo;OpenJDK&rdquo;. Typing JavaScript in Google gives you <strong>zero</strong> language/community hits (let me just say that w3schools is first one); <a href="http://www.ecmascript.org/">ECMAScript</a> is all about standards and many JS devs aren&rsquo;t be able to tell what ECMAScript is.</p>
 
-<p>Besides writing about software engineering and programming languages, because I believe in free and open-source software and culture, I&rsquo;ll probably cover these topics, too. (Lately <a href="https://github.com/Xaerxess">I started contributing</a> to various open-source projects, I&rsquo;ve been using GNU/Linux <a href="http://linuxcounter.net/user/407987.html">for almost nine years</a>). For now, I&rsquo;d like to point you to <a href="http://pjf.id.au/ethics/2013/12/28/do-not-stifle-innovation.html">this blog post</a> (by <a href="https://twitter.com/pjf">@pjf</a>) which I fully agree with:</p>
+<p>On the other hand, googling &ldquo;perl&rdquo; gives you hits like:</p>
+
+<ul>
+<li>&ldquo;The Perl Programming Language &ndash; www.perl.org&rdquo;,</li>
+<li>&ldquo;Perl programming documentation &ndash; perldoc.perl.org&rdquo;,</li>
+<li>&ldquo;The Comprehensive Perl Archive Network &ndash; www.cpan.org&rdquo;,</li>
+<li>&ldquo;Strawberry Perl for Windows&rdquo;,</li>
+<li>&ldquo;Perl Monks&rdquo;,</li>
+<li>&ldquo;The Perl Foundation&rdquo;</li>
+</ul>
+
+
+<p>from which <strong>every single resource is awesome</strong> &ndash; if you&rsquo;ve been using Perl for a while, you just can&rsquo;t <em>not</em> appreciate whole ecosystem and say <em>Perl is dead</em> because it&rsquo;s simply not true at all.</p>
+
+<p>Besides writing about software engineering and programming languages, because I believe in free and open-source software and culture, I&rsquo;ll probably cover these topics, too. (Lately <a href="https://github.com/Xaerxess">I started contributing</a> to various open-source projects, I&rsquo;ve been using GNU/Linux <a href="http://linuxcounter.net/user/407987.html">for almost nine years</a>, I really enjoy both). For now, I&rsquo;d like to point you to <a href="http://pjf.id.au/ethics/2013/12/28/do-not-stifle-innovation.html">this blog post</a> (by <a href="https://twitter.com/pjf">@pjf</a>) which I fully agree with:</p>
 
 <blockquote><p>&ldquo;While I’ve always known open source software is great, I’m increasingly starting to appreciate that open source developers are also great.&rdquo;</p></blockquote>
 
