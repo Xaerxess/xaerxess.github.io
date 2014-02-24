@@ -1,0 +1,25 @@
+---
+layout: post
+title: "About blogging - a case study"
+date: 2014-02-23 16:16:11 +0100
+comments: true
+categories: meta blogging
+---
+
+To blog or not to blog: that is the question. Or is it? I believe that today, in [Web 2.0 era](http://en.wikipedia.org/wiki/Web_2.0), everyone should share the knowledge, exchange thoughts, make the world better place, etc. ([see previous post about blogging](/blog/2014/01/27/manifest-or-future-content-of-this-blog.html)). Yes, it may sound a bit idealistic, but I've always wanted to have a personal blog about programming and stuff I do, because I think it can make a difference for someone. In my case blogging didn't work out (until now), probably because of two assumtions I made: write regularly _in Polish_ and serve blog _on my own blog engine on my own VPS_. [My first try from 2009](http://xaerxess.alwaysdata.net/) is still out there - it was a blog engine written in [Django](https://www.djangoproject.com/) (a [Python](http://python.org/) web framework), styled with custom, rather primitive CSS and filled with very few posts. As a small, personal project it failed, but because an old Polish sentence says "humans learn from failures" (I don't know if there's English equivalent), I'll write down what was wrong back then and what I'll try to do this time.
+
+<!-- more -->
+
+ 1. In those days I was too ambitious. Have a blog, write a blog, develop a blog engine and layout, manage a server. The new site is hosted on [GitHub Pages](http://pages.github.com/) using [Octopress](http://octopress.org/) as static site generator and customized [Octostrap3](http://kaworu.github.io/octopress/about/) as blog theme. Basically I stripped all my assumtions to **write (quite) regularly**, let's see if that'll do. (There are few defaults of Octopress I'd like to change someday, but let's just hope it won't distract _me_ from writing.)
+
+ 2. For my first blog I chose wrong technology: Python, which is fine language, but I've never worked proffesionally in Python, and Django, which is fine platform, but not for personall blogging. Basically I told myself: "During studies you made few projects using Python, you made one using Django, but neve atually _learned_ any of them." So I grabbed [Django Book](http://www.djangobook.com/), collected some resources found on the web and spent few days writing code, setting up server, tweaking layout, etc. There was not much time left for blogging because I was busy mastering Python and digging into Django (ex. I was writing posts from shell instead of using dedicated admin interface). It wasn't a bad experience (I dove into Python and Django which was fun after all), but combining blogging with programming didn't work out for me. I think UNIX philosophy "do one thing and do it well" will function well this time - all I need to write a post is just a text editor (*cough* Emacs *cough*), then do some `rake` / `git` stuff and it's online. _Maybe_ another time I'll write a blog engine or static site generator but for now I'll just write content.
+
+ 3. I also chose wrong language (for content). What I mean is I'm proud being Polish, but every blog I read is written in English, even if author is Polish. English is _lingua franca_ in programming, science and business in XXI century and there's no need to resist that trend. Consequence of choosing Polish as a language was **much** smaller audience, so this time (as you can see) I'll write in English. Maybe now someone will even leave a comment under one of my posts. Who knows, I'll wait. Also, when I feel the blog is ready, I'll start promotion, i.e. tweet about it, subscribe it to some aggregators and so on.
+
+ 4. I'm rather a perfectionist and quite often I hesitate if what I'm going to share on the Internet is well-written, does not have obvious errors, or is worth it. For now, I'll do my best to [release early, release often](http://en.wikipedia.org/wiki/Release_early,_release_often). After all, this post is on GitHub and you can [fill an issue](https://github.com/Xaerxess/xaerxess.github.io/issues) or [make a pull request](https://github.com/Xaerxess/xaerxess.github.io/pulls). Actually, feel encouraged to do so, stuff here is available under [Creative Commons Attribution license](https://creativecommons.org/licenses/by/3.0/).
+
+ 5. Previously my blog had no purpose, it was basically about nothing (partly because I treated it as a programming excercise). For contrast, the new blog shall be about _everything_. By _everything_ I mean I'll try to write about _every thing_ I think "Hmm, that's nice, never thought of that" or "Finally solved that!". There were far too many situations when I thougth "I should share this somehow" and I didn't.
+
+So, many promises, [not only to myself](https://questhub.io/realm/perl/quest/530a823b6e7817b05100001a), but for me it's time to put the bar a bit higher.
+
+_P.S. English punctuation is killing me, in Polish there are much simpler rules for placing a comma before and, or, but, etc., etc. (ex. there is no comma before "etc." in Polish). So please forgive me my ignorance and suggest an edit if you spot an error._
