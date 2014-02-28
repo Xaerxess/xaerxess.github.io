@@ -4,7 +4,7 @@
   <title><![CDATA[Category: blogging | Yet another programming blog]]></title>
   <link href="http://xaerxess.github.io/blog/categories/blogging/atom.xml" rel="self"/>
   <link href="http://xaerxess.github.io/"/>
-  <updated>2014-02-23T23:54:42+01:00</updated>
+  <updated>2014-02-28T21:57:12+01:00</updated>
   <id>http://xaerxess.github.io/</id>
   <author>
     <name><![CDATA[Grzegorz Rożniecki]]></name>
@@ -12,6 +12,31 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[About blogging - a case study]]></title>
+    <link href="http://xaerxess.github.io/blog/2014/02/23/about-blogging-a-case-study.html"/>
+    <updated>2014-02-23T16:16:11+01:00</updated>
+    <id>http://xaerxess.github.io/blog/2014/02/23/about-blogging-a-case-study</id>
+    <content type="html"><![CDATA[<p>To blog or not to blog: that is the question. Or is it? I believe that today, in <a href="http://en.wikipedia.org/wiki/Web_2.0">Web 2.0 era</a>, everyone should share the knowledge, exchange thoughts, make the world better place, etc. (<a href="/blog/2014/01/27/manifest-or-future-content-of-this-blog.html">see previous post about blogging</a>). Yes, it may sound a bit idealistic, but I&rsquo;ve always wanted to have a personal blog about programming and stuff I do, because I think it can make a difference for someone. In my case blogging didn&rsquo;t work out (until now), probably because of two assumtions I made: write regularly <em>in Polish</em> and serve blog <em>on my own blog engine on my own VPS</em>. <a href="http://xaerxess.alwaysdata.net/">My first try from 2009</a> is still out there &ndash; it was a blog engine written in <a href="https://www.djangoproject.com/">Django</a> (a <a href="http://python.org/">Python</a> web framework), styled with custom, rather primitive CSS and filled with very few posts. As a small, personal project it failed, but because an old Polish sentence says &ldquo;humans learn from failures&rdquo; (I don&rsquo;t know if there&rsquo;s English equivalent), I&rsquo;ll write down what was wrong back then and what I&rsquo;ll try to do this time.</p>
+
+<!-- more -->
+
+
+<ol>
+<li><p>In those days I was too ambitious. Have a blog, write a blog, develop a blog engine and layout, manage a server. The new site is hosted on <a href="http://pages.github.com/">GitHub Pages</a> using <a href="http://octopress.org/">Octopress</a> as static site generator and customized <a href="http://kaworu.github.io/octopress/about/">Octostrap3</a> as blog theme. Basically I stripped all my assumtions to <strong>write (quite) regularly</strong>, let&rsquo;s see if that&rsquo;ll do. (There are few defaults of Octopress I&rsquo;d like to change someday, but let&rsquo;s just hope it won&rsquo;t distract <em>me</em> from writing.)</p></li>
+<li><p>For my first blog I chose wrong technology: Python, which is fine language, but I&rsquo;ve never worked proffesionally in Python, and Django, which is fine platform, but not for personall blogging. Basically I told myself: &ldquo;During studies you made few projects using Python, you made one using Django, but neve atually <em>learned</em> any of them.&rdquo; So I grabbed <a href="http://www.djangobook.com/">Django Book</a>, collected some resources found on the web and spent few days writing code, setting up server, tweaking layout, etc. There was not much time left for blogging because I was busy mastering Python and digging into Django (ex. I was writing posts from shell instead of using dedicated admin interface). It wasn&rsquo;t a bad experience (I dove into Python and Django which was fun after all), but combining blogging with programming didn&rsquo;t work out for me. I think UNIX philosophy &ldquo;do one thing and do it well&rdquo; will function well this time &ndash; all I need to write a post is just a text editor (<em>cough</em> Emacs <em>cough</em>), then do some <code>rake</code> / <code>git</code> stuff and it&rsquo;s online. <em>Maybe</em> another time I&rsquo;ll write a blog engine or static site generator but for now I&rsquo;ll just write content.</p></li>
+<li><p>I also chose wrong language (for content). What I mean is I&rsquo;m proud being Polish, but every blog I read is written in English, even if author is Polish. English is <em>lingua franca</em> in programming, science and business in XXI century and there&rsquo;s no need to resist that trend. Consequence of choosing Polish as a language was <strong>much</strong> smaller audience, so this time (as you can see) I&rsquo;ll write in English. Maybe now someone will even leave a comment under one of my posts. Who knows, I&rsquo;ll wait. Also, when I feel the blog is ready, I&rsquo;ll start promotion, i.e. tweet about it, subscribe it to some aggregators and so on.</p></li>
+<li><p>I&rsquo;m rather a perfectionist and quite often I hesitate if what I&rsquo;m going to share on the Internet is well-written, does not have obvious errors, or is worth it. For now, I&rsquo;ll do my best to <a href="http://en.wikipedia.org/wiki/Release_early,_release_often">release early, release often</a>. After all, this post is on GitHub and you can <a href="https://github.com/Xaerxess/xaerxess.github.io/issues">fill an issue</a> or <a href="https://github.com/Xaerxess/xaerxess.github.io/pulls">make a pull request</a>. Actually, feel encouraged to do so, stuff here is available under <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution license</a>.</p></li>
+<li><p>Previously my blog had no purpose, it was basically about nothing (partly because I treated it as a programming excercise). For contrast, the new blog shall be about <em>everything</em>. By <em>everything</em> I mean I&rsquo;ll try to write about <em>every thing</em> I think &ldquo;Hmm, that&rsquo;s nice, never thought of that&rdquo; or &ldquo;Finally solved that!&rdquo;. There were far too many situations when I thougth &ldquo;I should share this somehow&rdquo; and I didn&rsquo;t.</p></li>
+</ol>
+
+
+<p>So, many promises, <a href="https://questhub.io/realm/perl/quest/530a823b6e7817b05100001a">not only to myself</a>, but for me it&rsquo;s time to put the bar a bit higher.</p>
+
+<p><em>P.S. English punctuation is killing me, in Polish there are much simpler rules for placing a comma before and, or, but, etc., etc. (ex. there is no comma before &ldquo;etc.&rdquo; in Polish). So please forgive me my ignorance and suggest an edit if you spot an error.</em></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[MANIFEST - or (future) content of this blog]]></title>

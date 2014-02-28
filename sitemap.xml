@@ -13,6 +13,16 @@
         <lastmod>2014-02-23T22:49:01+01:00</lastmod>
     </url>
     <url>
+        <loc>http://xaerxess.github.io/blog/2014/02/23/about-blogging-a-case-study.html</loc>
+        <lastmod>2014-02-24T00:22:00+01:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://xaerxess.github.io/blog/2014/02/28/using-extutils-makemaker-for-my-first-co-maint-release-bloom-filter.html
+        </loc>
+        <lastmod>2014-02-28T21:53:13+01:00</lastmod>
+    </url>
+    <url>
         <loc>http://xaerxess.github.io/assets/bootstrap/components.html</loc>
         <lastmod>2014-02-05T23:46:40+01:00</lastmod>
     </url>
@@ -26,7 +36,7 @@
     </url>
     <url>
         <loc>http://xaerxess.github.io/assets/bootstrap/</loc>
-        <lastmod>2014-02-23T23:51:01+01:00</lastmod>
+        <lastmod>2014-02-28T21:53:13+01:00</lastmod>
     </url>
     <url>
         <loc>http://xaerxess.github.io/assets/bootstrap/customize.html</loc>
@@ -46,10 +56,10 @@
     </url>
     <url>
         <loc>http://xaerxess.github.io/</loc>
-        <lastmod>2014-02-23T23:51:01+01:00</lastmod>
+        <lastmod>2014-02-28T21:53:13+01:00</lastmod>
     </url>
     <url>
         <loc>http://xaerxess.github.io/blog/archives/</loc>
-        <lastmod>2014-02-23T23:51:01+01:00</lastmod>
+        <lastmod>2014-02-28T21:53:13+01:00</lastmod>
     </url>
 </urlset>

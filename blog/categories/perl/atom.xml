@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Perl | Yet another programming blog]]></title>
   <link href="http://xaerxess.github.io/blog/categories/perl/atom.xml" rel="self"/>
   <link href="http://xaerxess.github.io/"/>
-  <updated>2014-02-23T23:54:42+01:00</updated>
+  <updated>2014-02-28T21:57:12+01:00</updated>
   <id>http://xaerxess.github.io/</id>
   <author>
     <name><![CDATA[Grzegorz Rożniecki]]></name>
@@ -12,6 +12,77 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Using ExtUtils::MakeMaker for my first co-maint release - Bloom::Filter]]></title>
+    <link href="http://xaerxess.github.io/blog/2014/02/28/using-extutils-makemaker-for-my-first-co-maint-release-bloom-filter.html"/>
+    <updated>2014-02-28T16:32:34+01:00</updated>
+    <id>http://xaerxess.github.io/blog/2014/02/28/using-extutils-makemaker-for-my-first-co-maint-release-bloom-filter</id>
+    <content type="html"><![CDATA[<p>After over 7 years, a new release of <a href="https://metacpan.org/release/XAERXESS/Bloom-Filter-1.1"><code>Bloom::Filter</code></a> is out! Thanks to Maciej Ceglowski (<a href="https://metacpan.org/author/MCEGLOWS">MCEGLOWS</a> / <a href="https://twitter.com/baconmeteor">@baconmeteor</a>), who was kind enough to give me co-maint permissions. If you don&rsquo;t know what bloom filter is<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>, please read <a href="http://www.perl.com/pub/2004/04/08/bloom_filters.html">&ldquo;Using Bloom Filters&rdquo;</a> (article written by Maciej in 2004, but still up-to-date and very interesting). Instead of writing about bloom filters, in this blog post I&rsquo;d like to concentrate on Perl module release process, as a part of my personal &ldquo;diving into Perl&rdquo; process.</p>
+
+<!-- more -->
+
+
+<p>First, just a quick summary what&rsquo;s included new version of <code>Bloom::Filter</code>:</p>
+
+<ul>
+<li><a href="https://rt.cpan.org/Dist/Display.html?Status=Resolved;Queue=Bloom-Filter">two bug reports closed</a><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup></li>
+<li>links to <a href="github.com/Xaerxess/Bloom-Filter">GitHub repository</a></li>
+<li>updated revision history in <a href="https://metacpan.org/source/XAERXESS/Bloom-Filter-1.1/Changes">Changes</a> (as per <a href="https://metacpan.org/pod/CPAN::Changes::Spec"><code>CPAN::Changes::Spec</code></a>)</li>
+<li>cleaned documentation</li>
+<li>tweaked Makefile.PL</li>
+</ul>
+
+
+<p>As you can see &ndash; only minor changes, no new features or optimizations. Still, it was hard for me to deal with &ldquo;legacy&rdquo; distibution &ndash; written by someone else in 2004, last released in 2007, when Perl was in different shape and some tools didn&rsquo;t exist yet. <code>Bloom::Filter</code> is <a href="https://metacpan.org/author/XAERXESS">my third module I uploaded on CPAN</a>, but first managed by <a href="https://metacpan.org/pod/ExtUtils::MakeMaker"><code>ExtUtils::MakeMaker</code></a> (EUMM). Previously I used <a href="https://metacpan.org/pod/Dist::Zilla"><code>Dist::Zilla</code></a> (dzil) and <a href="https://metacpan.org/pod/Dist::Milla"><code>Dist::Milla</code></a> (milla) to create a module from scratch and release it, which was quite overwhelming in case of <code>Dist:Zilla</code> (even with great documentation and <a href="http://dzil.org/">tutorial</a>), and very easy in case of <code>Dist::Milla</code>.<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup></p>
+
+<p>However, what should I do to make a realease of EUMM module was not very obvious to me. Despite I had read few blog posts and tutorials dealing with &ldquo;How to bootstrap release and manage a Perl module?&rdquo; topic, none of them actually <em>compared side by side and explained differences</em> between dzil, milla, EUMM and other tools such as <code>Module::Build</code>, <code>Module::Install</code>, <code>CPAN::Uploader</code><sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup>. It was quite confusing for a newbie like me and I had to read documentation of each of these modules to find out if I needed that module or not. As it turned out, managing distribution created with EUMM is harder comparing to Dist::[ZM]illa, because one has to do many things manually. EUMM <a href="https://metacpan.org/pod/ExtUtils::MakeMaker">documentation</a> says it&rsquo;s just <em>an utility designed to write a Makefile for an extension module from a Makefile.PL</em>. Bearing that in mind, next steps involved digging in EUMM documentation and hacking Makefile.PL. In particular, these are some problems I had to deal with (each of these should actually begin with &ldquo;Contrary to dzil / milla, &hellip;&rdquo;):</p>
+
+<ul>
+<li>To maintain compatibility with older EUMM version, I had to <a href="https://github.com/Xaerxess/Bloom-Filter/blob/1.1/Makefile.PL#L37">remove some features by hand in Makefile.PL</a>. I guess I expected that MakeMaker is actually MakeMakerMaker, which it isn&rsquo;t, obviously.</li>
+<li>README and LICENCE were not autogenerated and I had to maintain cohesion between Makefile.PL and these files.</li>
+<li>After doing <code>make dist</code> there&rsquo;s no next step to do actual release &ndash; tag, push and upload, another tool must be used for that (I used <code>CPAN::Uploader</code>).</li>
+</ul>
+
+
+<p>So I found out EUMM is not a distribution making swiss knife, just a tool for managing Makefile creation process. That said, I don&rsquo;t see a reason to use &ldquo;raw&rdquo; <code>ExtUtils::MakeMaker</code> or <code>Module::Build</code> plus some release tool instead of <code>Dist::Milla</code> &ndash; for my needs it&rsquo;s more than enough, it takes care of all boilercode <em>I</em> don&rsquo;t need to write, does all git-related release stuff, and changes version all over module.<sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup></p>
+
+<p>Speaking of versioning &ndash; according to <a href="http://www.dagolden.com/index.php/369/version-numbers-should-be-boring/">David Golden&rsquo;s article</a>, it should be a boring task. It wasn&rsquo;t, at least this time. I had to face two (actually three, third was, as always in Perl, <a href="http://en.wikipedia.org/wiki/There's_more_than_one_way_to_do_it">TIMTOWTDI</a>) issues here:</p>
+
+<ul>
+<li>There was already <a href="https://metacpan.org/release/KJETIL/Bloom-Filter-1.1">1.1 release on BackPAN</a> (How is that possible?)</li>
+<li><p>What is proper next development release for 1.0? I tried</p>
+
+<pre><code>my $version = Perl::Version-&gt;new('1.0');
+$version-&gt;inc_alpha;
+say $version;
+</code></pre>
+
+<p>which is unexpectedly <code>1_01</code>, not <code>1.0_01</code> but for <code>Perl::Version-&gt;new('1.1')</code> it&rsquo;s actually <code>1.1_01</code>.</p></li>
+</ul>
+
+
+<p>I&rsquo;ve decided to just do one release for 1.1, without any dev releases. Luckilly, it worked without any problem, although it takes a while to <em>see</em> the release on (Meta)CPAN. Now, when this post is finished, I have to contact some downstream authors, which I know have been using <a href="http://patch-tracker.debian.org/patch/series/view/libbloom-filter-perl/1.0-3/1001_Use_Digest::SHA.patch">patched version of <code>Bloom::Filter</code></a> and point them to the new release.</p>
+
+<p>Oh, there&rsquo;s this question which I am asking myself: should I move an old (i.e. co-maintained) module to <code>Dist::Milla</code>, or should it stay on EUMM forever?</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>In few words: bloom filter is a space-efficient probabilistic data structure, which is used to test whether an element is a member of a set (<em><a href="http://en.wikipedia.org/wiki/Bloom_filter">from Wikipedia</a></em>).<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>Actually I don&rsquo;t know how to filter closed issues which were fixed in 1.1 on RT&hellip; Any help?<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+<li id="fn:3">
+<p>I have to write a blog post about my <code>dzil</code> and <code>milla</code> experiences eventually&hellip;<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
+<li id="fn:4">
+<p>I deliberately listed tools which aren&rsquo;t used to same tasks, although my first impression was different.<a href="#fnref:4" rev="footnote">&#8617;</a></p></li>
+<li id="fn:5">
+<p><code>Dist::Milla</code> is also <a href="http://blogs.perl.org/users/brian_d_foy/2012/08/should-my-perl-release-process-be-yours.html">contributor-friendly</a>.<a href="#fnref:5" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[New module on CPAN - Task::BeLike::XAERXESS]]></title>
