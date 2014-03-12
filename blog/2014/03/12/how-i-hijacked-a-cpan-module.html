@@ -4,7 +4,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>About blogging - a case study - Yet another programming blog</title>
+  <title>How I hijacked a CPAN module - Yet another programming blog</title>
   <meta name="author" content="Grzegorz Rożniecki">
 
   
@@ -16,7 +16,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://xaerxess.github.io/blog/2014/02/23/about-blogging-a-case-study.html">
+  <link rel="canonical" href="http://xaerxess.github.io/blog/2014/03/12/how-i-hijacked-a-cpan-module.html">
   <link href="/favicon.png" type="image/png" rel="icon">
   <link href="/atom.xml" rel="alternate" title="Yet another programming blog" type="application/atom+xml">
 
@@ -110,7 +110,7 @@
 
 
 
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-02-23T16:16:11+01:00" pubdate data-updated="true">2014-02-23</time>
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-03-12T19:01:51+01:00" pubdate data-updated="true">2014-03-12</time>
         
            | <a href="#disqus_thread"
              data-disqus-identifier="http://xaerxess.github.io">Comments</a>
@@ -119,30 +119,49 @@
     
     
     <h1 class="entry-title">
-        About blogging - a case study
+        How I hijacked a CPAN module
         
     </h1>
     
   </header>
 
 
-<div class="entry-content clearfix"><p>To blog or not to blog: that is the question. Or is it? I believe that today, in <a href="http://en.wikipedia.org/wiki/Web_2.0">Web 2.0 era</a>, everyone should share the knowledge, exchange thoughts, make the world better place, etc. (<a href="/blog/2014/01/27/manifest-or-future-content-of-this-blog.html">see previous post about blogging</a>). Yes, it may sound a bit idealistic, but I&rsquo;ve always wanted to have a personal blog about programming and stuff I do, because I think it can make a difference for someone. In my case blogging didn&rsquo;t work out (until now), probably because of two assumtions I made: write regularly <em>in Polish</em> and serve blog <em>on my own blog engine on my own VPS</em>. <a href="http://xaerxess.alwaysdata.net/">My first try from 2009</a> is still out there &ndash; it was a blog engine written in <a href="https://www.djangoproject.com/">Django</a> (a <a href="http://python.org/">Python</a> web framework), styled with custom, rather primitive CSS and filled with very few posts. As a small, personal project it failed, but because an old Polish sentence says &ldquo;humans learn from failures&rdquo; (I don&rsquo;t know if there&rsquo;s English equivalent), I&rsquo;ll write down what was wrong back then and what I&rsquo;ll try to do this time.</p>
+<div class="entry-content clearfix"><p>Today Neil Bowers (<a href="https://twitter.com/neilbowers/">@neilb</a>) wrote a blog post titled <a href="http://neilb.org/2014/03/11/uploading-01.html">&ldquo;What happens when you upload to CPAN?&rdquo;</a> &ndash; a sneak peek at the very last part of module releasing process (when you do <code>cpan-upload</code> and recieve these two strange emails). Although I&rsquo;ve already released few distributions, <a href="https://pause.perl.org">PAUSE</a> still seems to me as a mysterious tool with design (i.e. web interface) from previous epoch<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>, but somehow capable of managing over 29000 distributions maintained by over 11000 authors. <!-- more -->What intrigued me in Neil&rsquo;s article was the &ldquo;hairy&rdquo; part (namespace indexer), particularly a conclusion (<em>&ldquo;the permissions check should be separate from, and earlier than, the indexing stage&rdquo;</em>) and these three points:</p>
 
-<!-- more -->
+<blockquote><ul>
+<li>PAUSE checks each package in your release to see if you&rsquo;re allowed to release it. You must either be the owner or have co-maint (see the doc for PAUSE::Permissions). If you&rsquo;ve flagged the package with no_index in the metadata, then the check is skipped.</li>
+<li>You are given ownership (&lsquo;f&rsquo; permission) for any packages that don&rsquo;t currently have any permission associated with them in PAUSE.</li>
+<li>The second email is sent to you, with the results of the permissions check.</li>
+</ul>
+</blockquote>
 
+<p>What wasn&rsquo;t clear to me was whether PAUSE let me do an &ldquo;unauthorized release&rdquo; of a module which doesn&rsquo;t have any owner listed in <code>06perms.txt</code>. To find out, I wrote a simple script which found modules without owner (using <a href="https://metacpan.org/pod/PAUSE::Permissions"><code>PAUSE::Permissions</code></a>) and then checked which of these are existing distibutions (using <a href="https://metacpan.org/pod/CPAN::Source"><code>CPAN::Source</code></a><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>).</p>
 
+<p>As a result I had a list containing few &ldquo;abandoned&rdquo; distributions, from which I chose one: <a href="https://metacpan.org/pod/release/MOCONNOR/YAML-AppConfig-0.16/lib/YAML/AppConfig.pm"><code>YAML::AppConfig</code></a> &ndash; previously released in 2006, with few bugs on RT. I made two <a href="https://github.com/Xaerxess/YAML-AppConfig/commit/891079cc8c10cf660630503e6da7314a3cd977f9">small</a> <a href="https://github.com/Xaerxess/YAML-AppConfig/commit/29a9017943a2db3ff4bbfe249fe3bd0f8dc4eda6">fixes</a>, bumped version to 0.17, made gzipped dist file and uploaded it to CPAN. I was expecting I&rsquo;d recieve two emails from PAUSE, the second informing me that distribution wasn&rsquo;t indexed due to insufficent permissions. To my astonishment, I actually got <em>&ldquo;Status of this distro: OK&rdquo;</em> and <em>&ldquo;Status: Successfully indexed&rdquo;</em>, and after few hours every piece of Perl / CPAN / PAUSE ecosystem listed my release as <a href="https://metacpan.org/pod/YAML::AppConfig">proper one</a>. I&rsquo;ve checked <code>06perms.txt</code> and found:</p>
+
+<pre><code>YAML::AppConfig,MOCONNOR,c
+YAML::AppConfig,XAERXESS,f
+</code></pre>
+
+<p>PAUSE gave me &lsquo;f&rsquo; permission, which I thought are given only to <strong>original</strong> distribution author. According to one of last Perl Advent Calendar articles covering <a href="http://perladvent.org/2013/2013-12-08.html">PAUSE permissions model</a>:</p>
+
+<blockquote><p>The &lsquo;f&rsquo; permission (&lsquo;first come&rsquo;) says that I was the <strong>first person</strong> to upload the module.</p></blockquote>
+
+<p>&hellip;who <strong>I</strong> wasn&rsquo;t. At this point I closed a bug on RT, and started tweaking <code>YAML::AppConfig</code>, which, although &ldquo;hijacked&rdquo;, I consider suitable for my <a href="https://questhub.io/realm/perl/quest/530a823b6e7817b05100001a">Monthly New Distribution Challenge 2014</a>.</p>
+
+<p>To sum up, either my understanding of PAUSE permissions is wrong or they have some flaws (or maybe features?). If I&rsquo;m wrong, please correct me.</p>
+
+<p>Anyway, does module hijacking counts as a module adoption?</p>
+<div class="footnotes">
+<hr/>
 <ol>
-<li><p>In those days I was too ambitious. Have a blog, write a blog, develop a blog engine and layout, manage a server. The new site is hosted on <a href="http://pages.github.com/">GitHub Pages</a> using <a href="http://octopress.org/">Octopress</a> as static site generator and customized <a href="http://kaworu.github.io/octopress/about/">Octostrap3</a> as blog theme. Basically I stripped all my assumtions to <strong>write (quite) regularly</strong>, let&rsquo;s see if that&rsquo;ll do. (There are few defaults of Octopress I&rsquo;d like to change someday, but let&rsquo;s just hope it won&rsquo;t distract <em>me</em> from writing.)</p></li>
-<li><p>For my first blog I chose wrong technology: Python, which is fine language, but I&rsquo;ve never worked proffesionally in Python, and Django, which is fine platform, but not for personall blogging. Basically I told myself: &ldquo;During studies you made few projects using Python, you made one using Django, but neve atually <em>learned</em> any of them.&rdquo; So I grabbed <a href="http://www.djangobook.com/">Django Book</a>, collected some resources found on the web and spent few days writing code, setting up server, tweaking layout, etc. There was not much time left for blogging because I was busy mastering Python and digging into Django (ex. I was writing posts from shell instead of using dedicated admin interface). It wasn&rsquo;t a bad experience (I dove into Python and Django which was fun after all), but combining blogging with programming didn&rsquo;t work out for me. I think UNIX philosophy &ldquo;do one thing and do it well&rdquo; will function well this time &ndash; all I need to write a post is just a text editor (<em>cough</em> Emacs <em>cough</em>), then do some <code>rake</code> / <code>git</code> stuff and it&rsquo;s online. <em>Maybe</em> another time I&rsquo;ll write a blog engine or static site generator but for now I&rsquo;ll just write content.</p></li>
-<li><p>I also chose wrong language (for content). What I mean is I&rsquo;m proud being Polish, but every blog I read is written in English, even if author is Polish. English is <em>lingua franca</em> in programming, science and business in XXI century and there&rsquo;s no need to resist that trend. Consequence of choosing Polish as a language was <strong>much</strong> smaller audience, so this time (as you can see) I&rsquo;ll write in English. Maybe now someone will even leave a comment under one of my posts. Who knows, I&rsquo;ll wait. Also, when I feel the blog is ready, I&rsquo;ll start promotion, i.e. tweet about it, subscribe it to some aggregators and so on.</p></li>
-<li><p>I&rsquo;m rather a perfectionist and quite often I hesitate if what I&rsquo;m going to share on the Internet is well-written, does not have obvious errors, or is worth it. For now, I&rsquo;ll do my best to <a href="http://en.wikipedia.org/wiki/Release_early,_release_often">release early, release often</a>. After all, this post is on GitHub and you can <a href="https://github.com/Xaerxess/xaerxess.github.io/issues">fill an issue</a> or <a href="https://github.com/Xaerxess/xaerxess.github.io/pulls">make a pull request</a>. Actually, feel encouraged to do so, stuff here is available under <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution license</a>.</p></li>
-<li><p>Previously my blog had no purpose, it was basically about nothing (partly because I treated it as a programming excercise). For contrast, the new blog shall be about <em>everything</em>. By <em>everything</em> I mean I&rsquo;ll try to write about <em>every thing</em> I think &ldquo;Hmm, that&rsquo;s nice, never thought of that&rdquo; or &ldquo;Finally solved that!&rdquo;. There were far too many situations when I thougth &ldquo;I should share this somehow&rdquo; and I didn&rsquo;t.</p></li>
+<li id="fn:1">
+<p>That said, I really like the <a href="http://neilb.org/2014/03/10/cpan-dashboard.html#comment-1279343094">idea of PAUSE and MetaCPAN dashboard integration</a>.<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>I had to fix <code>CPAN::Source</code> first; I&rsquo;ll try to publish fixes for it later, because actually it&rsquo;s a nice tool with 100% test failed on CPAN Testers.<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
 </ol>
+</div>
 
-
-<p>So, many promises, <a href="https://questhub.io/realm/perl/quest/530a823b6e7817b05100001a">not only to myself</a>, but for me it&rsquo;s time to put the bar a bit higher.</p>
-
-<p><em>P.S. English punctuation is killing me, in Polish there are much simpler rules for placing a comma before and, or, but, etc., etc. (ex. there is no comma before &ldquo;etc.&rdquo; in Polish). So please forgive me my ignorance and suggest an edit if you spot an error.</em></p>
 </div>
 
 
@@ -166,13 +185,13 @@
 
 
 
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-02-23T16:16:11+01:00" pubdate data-updated="true">2014-02-23</time>
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-03-12T19:01:51+01:00" pubdate data-updated="true">2014-03-12</time>
           
 
 <span class="glyphicon glyphicon-tags"></span>&nbsp;
 <span class="categories">
   
-    <a class='category' href='/blog/categories/blogging/'>blogging</a>, <a class='category' href='/blog/categories/meta/'>meta</a>
+    <a class='category' href='/blog/categories/cpan/'>CPAN</a>, <a class='category' href='/blog/categories/perl/'>Perl</a>
   
 </span>
 
@@ -181,7 +200,7 @@
         
           <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://xaerxess.github.io/blog/2014/02/23/about-blogging-a-case-study.html" data-via="Xaerxess" data-counturl="http://xaerxess.github.io/blog/2014/02/23/about-blogging-a-case-study.html" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://xaerxess.github.io/blog/2014/03/12/how-i-hijacked-a-cpan-module.html" data-via="Xaerxess" data-counturl="http://xaerxess.github.io/blog/2014/03/12/how-i-hijacked-a-cpan-module.html" >Tweet</a>
   
   
   <div class="g-plusone" data-size="small"></div>
@@ -193,10 +212,8 @@
         
           <ul class="meta text-muted pager">
             
-            <li class="previous"><a href="/blog/2014/01/31/new-module-on-cpan-task-belike-xaerxess.html" title="Previous Post: New module on CPAN - Task::BeLike::XAERXESS">&laquo; New module on CPAN - Task::BeLike::XAERXESS</a></li>
+            <li class="previous"><a href="/blog/2014/02/28/using-extutils-makemaker-for-my-first-co-maint-release-bloom-filter.html" title="Previous Post: Using ExtUtils::MakeMaker for my first co-maint release - Bloom::Filter">&laquo; Using ExtUtils::MakeMaker for my first co-maint release - Bloom::Filter</a></li>
             
-            
-            <li class="next"><a href="/blog/2014/02/28/using-extutils-makemaker-for-my-first-co-maint-release-bloom-filter.html" title="Next Post: Using ExtUtils::MakeMaker for my first co-maint release - Bloom::Filter">Using ExtUtils::MakeMaker for my first co-maint release - Bloom::Filter &raquo;</a></li>
             
           </ul>
         
@@ -221,11 +238,11 @@
   
   <div id="recent_posts" class="list-group">
     
-    <a class="list-group-item " href="/blog/2014/03/12/how-i-hijacked-a-cpan-module.html">How I hijacked a CPAN module</a>
+    <a class="list-group-item active" href="/blog/2014/03/12/how-i-hijacked-a-cpan-module.html">How I hijacked a CPAN module</a>
     
     <a class="list-group-item " href="/blog/2014/02/28/using-extutils-makemaker-for-my-first-co-maint-release-bloom-filter.html">Using ExtUtils::MakeMaker for my first co-maint release - Bloom::Filter</a>
     
-    <a class="list-group-item active" href="/blog/2014/02/23/about-blogging-a-case-study.html">About blogging - a case study</a>
+    <a class="list-group-item " href="/blog/2014/02/23/about-blogging-a-case-study.html">About blogging - a case study</a>
     
     <a class="list-group-item " href="/blog/2014/01/31/new-module-on-cpan-task-belike-xaerxess.html">New module on CPAN - Task::BeLike::XAERXESS</a>
     
@@ -324,8 +341,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://xaerxess.github.io/blog/2014/02/23/about-blogging-a-case-study.html';
-        var disqus_url = 'http://xaerxess.github.io/blog/2014/02/23/about-blogging-a-case-study.html';
+        var disqus_identifier = 'http://xaerxess.github.io/blog/2014/03/12/how-i-hijacked-a-cpan-module.html';
+        var disqus_url = 'http://xaerxess.github.io/blog/2014/03/12/how-i-hijacked-a-cpan-module.html';
         var disqus_script = 'embed.js';
       
     (function () {
