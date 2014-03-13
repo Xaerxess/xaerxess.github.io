@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Perl | Yet another programming blog]]></title>
   <link href="http://xaerxess.github.io/blog/categories/perl/atom.xml" rel="self"/>
   <link href="http://xaerxess.github.io/"/>
-  <updated>2014-03-12T23:30:54+01:00</updated>
+  <updated>2014-03-13T19:36:11+01:00</updated>
   <id>http://xaerxess.github.io/</id>
   <author>
     <name><![CDATA[Grzegorz Rożniecki]]></name>
@@ -29,7 +29,7 @@
 
 <p>What wasn&rsquo;t clear to me was whether PAUSE let me do an &ldquo;unauthorized release&rdquo; of a module which doesn&rsquo;t have any owner listed in <code>06perms.txt</code>. To find out, I wrote a simple script which found modules without owner (using <a href="https://metacpan.org/pod/PAUSE::Permissions"><code>PAUSE::Permissions</code></a>) and then checked which of these are existing distibutions (using <a href="https://metacpan.org/pod/CPAN::Source"><code>CPAN::Source</code></a><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>).</p>
 
-<p>As a result I had a list containing few &ldquo;abandoned&rdquo; distributions, from which I chose one: <a href="https://metacpan.org/pod/release/MOCONNOR/YAML-AppConfig-0.16/lib/YAML/AppConfig.pm"><code>YAML::AppConfig</code></a> &ndash; previously released in 2006, with few bugs on RT. I made two <a href="https://github.com/Xaerxess/YAML-AppConfig/commit/891079cc8c10cf660630503e6da7314a3cd977f9">small</a> <a href="https://github.com/Xaerxess/YAML-AppConfig/commit/29a9017943a2db3ff4bbfe249fe3bd0f8dc4eda6">fixes</a>, bumped version to 0.17, made gzipped dist file and uploaded it to CPAN. I was expecting I&rsquo;d recieve two emails from PAUSE, the second informing me that distribution wasn&rsquo;t indexed due to insufficent permissions. To my astonishment, I actually got <em>&ldquo;Status of this distro: OK&rdquo;</em> and <em>&ldquo;Status: Successfully indexed&rdquo;</em>, and after few hours every piece of Perl / CPAN / PAUSE ecosystem listed my release as <a href="https://metacpan.org/pod/YAML::AppConfig">proper one</a>. I&rsquo;ve checked <code>06perms.txt</code> and found:</p>
+<p>As a result I had a list containing few &ldquo;abandoned&rdquo; distributions, from which I chose one: <a href="https://metacpan.org/pod/release/MOCONNOR/YAML-AppConfig-0.16/lib/YAML/AppConfig.pm"><code>YAML::AppConfig</code></a> &ndash; previously released in 2006, with few bugs on RT. I made two <a href="https://github.com/Xaerxess/YAML-AppConfig/commit/3bd3da22af39df848eebf6db69ab2e7e200c82c9">small</a> <a href="https://github.com/Xaerxess/YAML-AppConfig/commit/2e618883a9bfe464f547509fcfed6487b2a1cd84">fixes</a>, bumped version to 0.17, made gzipped dist file and uploaded it to CPAN. I was expecting I&rsquo;d recieve two emails from PAUSE, the second informing me that distribution wasn&rsquo;t indexed due to insufficent permissions. To my astonishment, I actually got <em>&ldquo;Status of this distro: OK&rdquo;</em> and <em>&ldquo;Status: Successfully indexed&rdquo;</em>, and after few hours every piece of Perl / CPAN / PAUSE ecosystem listed my release as <a href="https://metacpan.org/pod/YAML::AppConfig">proper one</a>. I&rsquo;ve checked <code>06perms.txt</code> and found:</p>
 
 <pre><code>YAML::AppConfig,MOCONNOR,c
 YAML::AppConfig,XAERXESS,f
