@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Perl | Yet another programming blog]]></title>
   <link href="http://xaerxess.github.io/blog/categories/perl/atom.xml" rel="self"/>
   <link href="http://xaerxess.github.io/"/>
-  <updated>2014-03-13T19:36:11+01:00</updated>
+  <updated>2014-03-14T19:05:13+01:00</updated>
   <id>http://xaerxess.github.io/</id>
   <author>
     <name><![CDATA[Grzegorz Rożniecki]]></name>
@@ -18,7 +18,7 @@
     <link href="http://xaerxess.github.io/blog/2014/03/12/how-i-hijacked-a-cpan-module.html"/>
     <updated>2014-03-12T19:01:51+01:00</updated>
     <id>http://xaerxess.github.io/blog/2014/03/12/how-i-hijacked-a-cpan-module</id>
-    <content type="html"><![CDATA[<p>Today Neil Bowers (<a href="https://twitter.com/neilbowers/">@neilb</a>) wrote a blog post titled <a href="http://neilb.org/2014/03/11/uploading-01.html">&ldquo;What happens when you upload to CPAN?&rdquo;</a> &ndash; a sneak peek at the very last part of module releasing process (when you do <code>cpan-upload</code> and recieve these two strange emails). Although I&rsquo;ve already released few distributions, <a href="https://pause.perl.org">PAUSE</a> still seems to me as a mysterious tool with design (i.e. web interface) from previous epoch<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>, but somehow capable of managing over 29000 distributions maintained by over 11000 authors. <!-- more -->What intrigued me in Neil&rsquo;s article was the &ldquo;hairy&rdquo; part (namespace indexer), particularly a conclusion (<em>&ldquo;the permissions check should be separate from, and earlier than, the indexing stage&rdquo;</em>) and these three points:</p>
+    <content type="html"><![CDATA[<p>Today Neil Bowers (<a href="https://twitter.com/neilbowers/">@neilbowers</a>) wrote a blog post titled <a href="http://neilb.org/2014/03/11/uploading-01.html">&ldquo;What happens when you upload to CPAN?&rdquo;</a> &ndash; a sneak peek at the very last part of module releasing process (when you do <code>cpan-upload</code> and recieve these two strange emails). Although I&rsquo;ve already released few distributions, <a href="https://pause.perl.org">PAUSE</a> still seems to me as a mysterious tool with design (i.e. web interface) from previous epoch<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>, but somehow capable of managing over 29000 distributions maintained by over 11000 authors. <!-- more -->What intrigued me in Neil&rsquo;s article was the &ldquo;hairy&rdquo; part (namespace indexer), particularly a conclusion (<em>&ldquo;the permissions check should be separate from, and earlier than, the indexing stage&rdquo;</em>) and these three points:</p>
 
 <blockquote><ul>
 <li>PAUSE checks each package in your release to see if you&rsquo;re allowed to release it. You must either be the owner or have co-maint (see the doc for PAUSE::Permissions). If you&rsquo;ve flagged the package with no_index in the metadata, then the check is skipped.</li>
@@ -27,9 +27,9 @@
 </ul>
 </blockquote>
 
-<p>What wasn&rsquo;t clear to me was whether PAUSE let me do an &ldquo;unauthorized release&rdquo; of a module which doesn&rsquo;t have any owner listed in <code>06perms.txt</code>. To find out, I wrote a simple script which found modules without owner (using <a href="https://metacpan.org/pod/PAUSE::Permissions"><code>PAUSE::Permissions</code></a>) and then checked which of these are existing distibutions (using <a href="https://metacpan.org/pod/CPAN::Source"><code>CPAN::Source</code></a><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>).</p>
+<p>What wasn&rsquo;t clear to me was whether PAUSE let me do an &ldquo;unauthorized release&rdquo; of a module which doesn&rsquo;t have any owner listed in <code>06perms.txt</code>. To find out, I wrote a simple script which found modules without owner (using <a href="https://metacpan.org/pod/PAUSE::Permissions"><code>PAUSE::Permissions</code></a>) and then checked which of these are existing distributions (using <a href="https://metacpan.org/pod/CPAN::Source"><code>CPAN::Source</code></a><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>).</p>
 
-<p>As a result I had a list containing few &ldquo;abandoned&rdquo; distributions, from which I chose one: <a href="https://metacpan.org/pod/release/MOCONNOR/YAML-AppConfig-0.16/lib/YAML/AppConfig.pm"><code>YAML::AppConfig</code></a> &ndash; previously released in 2006, with few bugs on RT. I made two <a href="https://github.com/Xaerxess/YAML-AppConfig/commit/3bd3da22af39df848eebf6db69ab2e7e200c82c9">small</a> <a href="https://github.com/Xaerxess/YAML-AppConfig/commit/2e618883a9bfe464f547509fcfed6487b2a1cd84">fixes</a>, bumped version to 0.17, made gzipped dist file and uploaded it to CPAN. I was expecting I&rsquo;d recieve two emails from PAUSE, the second informing me that distribution wasn&rsquo;t indexed due to insufficent permissions. To my astonishment, I actually got <em>&ldquo;Status of this distro: OK&rdquo;</em> and <em>&ldquo;Status: Successfully indexed&rdquo;</em>, and after few hours every piece of Perl / CPAN / PAUSE ecosystem listed my release as <a href="https://metacpan.org/pod/YAML::AppConfig">proper one</a>. I&rsquo;ve checked <code>06perms.txt</code> and found:</p>
+<p>As a result I had a list containing few &ldquo;abandoned&rdquo; distributions, from which I chose one: <a href="https://metacpan.org/pod/release/MOCONNOR/YAML-AppConfig-0.16/lib/YAML/AppConfig.pm"><code>YAML::AppConfig</code></a> &ndash; previously released in 2006, with few bugs on RT. I made two <a href="https://github.com/Xaerxess/YAML-AppConfig/commit/3bd3da22af39df848eebf6db69ab2e7e200c82c9">small</a> <a href="https://github.com/Xaerxess/YAML-AppConfig/commit/2e618883a9bfe464f547509fcfed6487b2a1cd84">fixes</a>, bumped version to 0.17, made gzipped dist file and uploaded it to CPAN. I was expecting I&rsquo;d receive two emails from PAUSE, the second informing me that distribution wasn&rsquo;t indexed due to insufficient permissions. To my astonishment, I actually got <em>&ldquo;Status of this distro: OK&rdquo;</em> and <em>&ldquo;Status: Successfully indexed&rdquo;</em>, and after few hours every piece of Perl / CPAN / PAUSE ecosystem listed my release as <a href="https://metacpan.org/pod/YAML::AppConfig">proper one</a>. I&rsquo;ve checked <code>06perms.txt</code> and found:</p>
 
 <pre><code>YAML::AppConfig,MOCONNOR,c
 YAML::AppConfig,XAERXESS,f
@@ -44,6 +44,16 @@ YAML::AppConfig,XAERXESS,f
 <p>To sum up, either my understanding of PAUSE permissions is wrong or they have some flaws (or maybe features?). If I&rsquo;m wrong, please correct me.</p>
 
 <p>Anyway, does module hijacking counts as a module adoption?</p>
+
+<hr />
+
+<p><strong>Follow-up</strong></p>
+
+<p>I didn&rsquo;t mean to disclose potential security threat, and I&rsquo;m sure I&rsquo;ll be more careful in the future writing about similar issues. Luckily, as you can see <a href="http://localhost:4000/blog/2014/03/12/how-i-hijacked-a-cpan-module.html#comment-1283194094">in the comment</a>, <a href="https://twitter.com/rjbs">@rjbs</a> was in the right place in the right time (i.e. <a href="http://act.qa-hackathon.org/qa2014/">Perl QA Hackaton 2014</a>) and <a href="https://github.com/andk/pause/commit/d3e76f314c33570b2670b07eb7c2a93ccfcec66a">fixed the bug</a> in PAUSE.</p>
+
+<p>To be honest, I looked at PAUSE code after I had &ldquo;hijacked&rdquo; module, but setting up PAUSE is <a href="https://twitter.com/rjbs/status/444185178811146240">&ldquo;Very Hard™&rdquo;</a>. For example, I didn&rsquo;t have any <a href="https://github.com/andk/pause/blob/66f72204e24957415f5d2aca3fba519661beb2d8/doc/README#L142">Apache 1.3 with mod_perl1</a> ready at hand, nor any spare time to compile it. Hope it&rsquo;ll be easier in the future.</p>
+
+<p>One more thing &ndash; I took the opportunity and &ldquo;adopted&rdquo; <code>YAML::AppConfig</code>: fixed all bugs, made all tests pass, added changelog, modernized its metadata, and uploaded version 0.19 on CPAN. If you spot more bugs (either in PAUSE or <code>YAML::AppConfig</code>), please report them. It&rsquo;s open source after all.</p>
 <div class="footnotes">
 <hr/>
 <ol>
