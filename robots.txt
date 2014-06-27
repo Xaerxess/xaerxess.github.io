@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://xaerxess.github.io/sitemap.xml 
+Sitemap: http://xaerxess.pl/sitemap.xml 

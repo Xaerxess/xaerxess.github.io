@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Yet another programming blog]]></title>
-  <link href="http://xaerxess.github.io/atom.xml" rel="self"/>
-  <link href="http://xaerxess.github.io/"/>
-  <updated>2014-03-14T19:05:13+01:00</updated>
-  <id>http://xaerxess.github.io/</id>
+  <link href="http://xaerxess.pl/atom.xml" rel="self"/>
+  <link href="http://xaerxess.pl/"/>
+  <updated>2014-06-27T15:09:49+02:00</updated>
+  <id>http://xaerxess.pl/</id>
   <author>
     <name><![CDATA[Grzegorz Rożniecki]]></name>
     
@@ -14,10 +14,219 @@
 
   
   <entry>
+    <title type="html"><![CDATA[More Agile than Java - Keynotes from 33rd Degree 2014]]></title>
+    <link href="http://xaerxess.pl/blog/2014/06/27/more-agile-than-java-keynotes-from-33rd-degree-2014.html"/>
+    <updated>2014-06-27T14:44:02+02:00</updated>
+    <id>http://xaerxess.pl/blog/2014/06/27/more-agile-than-java-keynotes-from-33rd-degree-2014</id>
+    <content type="html"><![CDATA[<p>Few weeks ago, on June 9th-11th, I attended <a href="http://2014.33degree.org/">33rd Degree Conference 2014</a> &ndash; a big Java event held in Kraków. It was my first programming conference ever, and I was stunned how awesome it was. I had a great time, met some nice people, had plenty interesting conversations and listened to many inspiring talks. I&rsquo;d like to share my thoughts on 33rd Degree&rsquo;s keynotes, which, as it turned out, weren&rsquo;t strictly about Java or any other concrete programming language, but they concentrated on a developer &ndash; how he should work, what he should pursue, and how should he cooperate with business and management &ndash; all this as a way of achieving satisfaction and fulfillment.<!-- more --></p>
+
+<h1>Think for yourself</h1>
+
+<p>First keynote encouraged all developers to take responsibility, to do something that matters <em>for clients</em>. Yes, <a href="https://twitter.com/mpoppendieck">Marry Poppendieck</a>, creator of lean software development<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>, told us, programmers, to take matters into our own hands. Ideally, there should be no (unnecessary) management between client and developer but if there&rsquo;s one, the company should allow programmers to have consumers feedback accessible.</p>
+
+<blockquote class="twitter-tweet" lang="en"><p>&quot;Give people permission and tools to pursue their passion&quot; excellent advise by <a href="https://twitter.com/mpoppendieck">@mpoppendieck</a> at <a href="https://twitter.com/hashtag/33rdDegree?src=hash">#33rdDegree</a></p>&mdash; Arun Gupta (@arungupta) <a href="https://twitter.com/arungupta/statuses/475906411126599680">June 9, 2014</a></blockquote>
+
+
+<script async src="http://xaerxess.pl//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>In the example Marry gave from her experience, the company which successfully adopted lean thinking (and development) techniques, reduced time spent on design defining meetings from 20% to 5% time spent on the project, leaving much more space for actual development <strong>and</strong> much more space for developers to do what they think is best for clients. This is quite similar to what Agile says, and for example Scrum does.</p>
+
+<blockquote class="twitter-tweet" lang="en"><p>&quot;The shadow of the Future&quot; by <a href="https://twitter.com/mpoppendieck">@mpoppendieck</a> : Economics 3.0, Passion, Motivation and teamwork! <a href="https://twitter.com/hashtag/33degree?src=hash">#33degree</a> <a href="http://t.co/mzdOKPwGkU">pic.twitter.com/mzdOKPwGkU</a></p>&mdash; Stephan Janssen (@Stephan007) <a href="https://twitter.com/Stephan007/statuses/475909639775989761">June 9, 2014</a></blockquote>
+
+
+<script async src="http://xaerxess.pl//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>Developers should create right thing to develop, so adding a value to the product and then being able to access feedback <em>from</em> clients (to constantly improve software). Only that kind of attitude allows programmers to achieve satisfaction from work and what is called &ldquo;the flow&rdquo;, a psychology term introduced by Mihaly Csikszentmihalyi (who is <em>obviously</em> Hungarian). <a href="http://en.wikipedia.org/wiki/Flow_(psychology">From Wikipedia</a>) (emphasis mine):</p>
+
+<blockquote><p><strong>Flow</strong> is the mental state of operation in which a person performing an activity is fully immersed in a feeling of energized <strong>focus</strong>, full <strong>involvement</strong>, and <strong>enjoyment</strong> in the process of the activity. In essence, flow is characterized by complete absorption in what one does. (&hellip;) Flow is completely focused <strong>motivation</strong>.</p></blockquote>
+
+<p>Flow, according to Mary, is each programmers goal, a nirvana everybody should should seek and chase.</p>
+
+<p><img src="http://upload.wikimedia.org/wikipedia/commons/f/f6/Challenge_vs_skill.svg" alt="Challenge vs. skill" /></p>
+
+<p>Since flow appeared in almost every keynote on 33rd Degree, I think it&rsquo;s quite important for each programmer to understand what this diagram means &ndash; more skilled developer <strong>needs</strong> new challenges, or else he won&rsquo;t be satisfied.</p>
+
+<p>As final advice Marry told us to remember about <a href="http://c2.com/cgi/wiki?SharpenTheSaw">sharpening the saw</a> &ndash; an ability to improve programming skills by doing something which <em>isn&rsquo;t</em> programming. <a href="http://blog.codinghorror.com/sharpening-the-saw/">Jeff Atwood</a> mentions reading programming blogs, <a href="https://news.ycombinator.com/">HN</a>, <a href="http://www.reddit.com/r/programming">proggit</a>; I&rsquo;d add to that list writing on <a href="http://stackoverflow.com/">StackOverflow</a>, following other devs on <a href="https://twitter.com">Twitter</a>, and (starting from 33rd Degree) attending to conferences.</p>
+
+<h1>Managers are from Mars, Developers are from Venus</h1>
+
+<p><a href="https://twitter.com/tedneward">Ted Neward</a> gave second keynote in which he described a really tough relationship between two groups of people from IT industry. This keynote didn&rsquo;t actually have linear plot and a single conclusion, but rather consisted few interesting (and funny) stories, which I think were supposed to provoke a listener to think about software industry.</p>
+
+<p>In the beginning of his presentation (and after assuring that no managers are present in the room) Ted added a disclaimer: there were many stereotypes in his talk, many personal claims which audience may or may not agree with, because these were <em>his own</em> observations.</p>
+
+<p>So where&rsquo;s the problem?</p>
+
+<p>Developers struggle with managers who are like from another planet, because these two kinds of people just think and behave differently:</p>
+
+<ul>
+<li>Managers don&rsquo;t really understand these strange people who are doing something which <strong>doesn&rsquo;t really exist</strong>! Timelines, excel spreadsheets, meetings &ndash; those are real, can be measured and shown to higher management, but bunch of text put into a machine isn&rsquo;t real.</li>
+<li>Managers manage people, developers manage machines. <em>Hint:</em> This is not the same.</li>
+<li>Managers don&rsquo;t have to be (too) creative, developers do.</li>
+<li>Managers have time constraints and hourly schedule (which you can measure and arrange), developers have flow and satisfaction.</li>
+</ul>
+
+
+<p>Ted compared flow to sleep &ndash; you can&rsquo;t force yourself to sleep, you can only setup appropriate conditions for it. And meetings with management, phone calls, etc. don&rsquo;t help in that.</p>
+
+<p>The keynote was also a (small) rant on role of project managers role in modern software development. Well, it wasn&rsquo;t a rant <em>per se</em>, but rather small history lesson about &ldquo;scientific management&rdquo; and its creator, <a href="http://en.wikipedia.org/wiki/Frederick_Winslow_Taylor">Frederick Taylor</a>. Long story short: The entire industry is broken because &ldquo;scientific management&rdquo; was a lie. Taylor authored &ldquo;The Principles of Scientific Management&rdquo; which consisted a basis for what is nowadays taught on Harvard, but his research was actually mostly made up! His &ldquo;science&rdquo; wasn&rsquo;t really science, since it couldn&rsquo;t be validated, but nonetheless his ideas spread around the world and still are by many considered as valid.</p>
+
+<p>There was also a story about <a href="en.wikipedia.org/wiki/Scott_Adams">Scott Adams</a>, creator of <a href="dilbert.com">Dilbert</a>, which basically showed how fuzzy is project management as a discipline. Funny and not funny at the same time.</p>
+
+<blockquote class="twitter-tweet" lang="en"><p>Last 20 years of dilbert is about you. Please don&#39;t cry <a href="https://twitter.com/tedneward">@tedneward</a> at <a href="https://twitter.com/hashtag/33degree?src=hash">#33degree</a> <a href="https://twitter.com/hashtag/33rdDegree?src=hash">#33rdDegree</a></p>&mdash; Michał Gruca (@michalgruca) <a href="https://twitter.com/michalgruca/statuses/475917017460273152">June 9, 2014</a></blockquote>
+
+
+<script async src="http://xaerxess.pl//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<h1>Power to the Programmers</h1>
+
+<p>Second day begun with <a href="https://twitter.com/imtomgilb">Tom Gilb</a>&rsquo;s talking about&hellip; much the same as Marry or Ted the previous day, only that Tom was concentrating on other aspects. Numbers, measures, tests were essential. That, combined with <a href="http://gilb.com/dl821">very dense slides</a> made this session very weary, but also very striking.</p>
+
+<p>Basically Tom showed scientific way of agile programming, proven to be right, because he presented many real case studies from his experience. The major idea was to delegate power to devs, so that they can analyze their <em>own</em> defects and fix their <em>own</em> process. These are few points I managed to write down:</p>
+
+<ul>
+<li>automate and test as much as you can,</li>
+<li>small, concrete targets (&ldquo;quality requirements&rdquo;),</li>
+<li>be agile (&ldquo;design is an iterative process&rdquo;),</li>
+<li>measure and validate everything.</li>
+</ul>
+
+
+<p>Conclusions (taken directly from slides) match what we heard from day 1 keynotes:</p>
+
+<ul>
+<li>Devs are better at managing their own work environment, than their managers are.</li>
+<li>‘Directors’ <em>[i.e managers and architects]</em> should NOT design the work environment.</li>
+<li>Devs should ‘evolve the environment’:
+
+<ul>
+<li>through practical deep personal insights,</li>
+<li>and take responsibility for their own work situation.</li>
+</ul>
+</li>
+</ul>
+
+
+<p>The talk is definitely worth watching when published, because then one would be able to listen and stop to read whole slide, and think about Tom&rsquo;s ideas and experiences, which seem quite accurate.</p>
+
+<h1>Crazy and Focused</h1>
+
+<p>Next keynote was very different from previous one &ndash; <a href="https://twitter.com/dimsumthinking">Daniel Steinberg</a>&rsquo;s slides were raw, contained one word or maximum one sentence on each page, there were no numbers, several images and videos, yet this keynote was by many called the best on whole conference.</p>
+
+<p>In his inspirational speech, Daniel encouraged every listener to think out of the box, and see users not as crowd, but as a single person.</p>
+
+<blockquote class="twitter-tweet" lang="en"><p>&quot;We&#39;re toolmakers, what we do changes lives, it matters.&quot; <a href="https://twitter.com/dimsumthinking">@dimsumthinking</a> <a href="https://twitter.com/hashtag/33degree?src=hash">#33degree</a></p>&mdash; Venkat Subramaniam (@venkat_s) <a href="https://twitter.com/venkat_s/statuses/476285071046225920">June 10, 2014</a></blockquote>
+
+
+<script async src="http://xaerxess.pl//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>Yes, developers should change lives, but since changing whole world is impossible, we should change at least one life &ndash; it should be our target. As an example, Daniel showed one of Apple&rsquo;s ads &ndash; it was not about product itself, but rather what the product gives to the world. It adds a value to a user, <em>the</em> user. The Apple ad, <em>Think different</em>, in which Steve Jobs himself presented many modern visionaries, people who changed the world, like Albert Einstein, John Lennon or Dalai Lama. Each of them was &ldquo;crazy&rdquo;, crazy enough to think they can change the world.</p>
+
+<iframe width="420" height="315" src="http://xaerxess.pl//www.youtube.com/embed/Rzu6zeLSWq8" frameborder="0" allowfullscreen></iframe>
+
+
+<p>We can succeed only if we focus on an individual, try to have closer relationship with client and pay attention to details. Daniel&rsquo;s talk wasn&rsquo;t just about slogans, it was his life manifesto, his personal experience, which made whole keynote very genuine and honest.</p>
+
+<h1>The Joy of Functional Programming</h1>
+
+<p>This was a proper entertaining and interesting keynote &ndash; <a href="https://twitter.com/venkat_s">Venkat Subramaniam</a> had great contact with audience, did some live pair programming, and conveniently introduced lambdas to broad audience! It was also most &ldquo;tightly coupled to Java&rdquo; session among all keynotes, but still I think it should be interesting to every programmer.</p>
+
+<p>Venkat presented a story of &ldquo;mainstream&rdquo;: how beliefs like Earth being flat and center of the Universe once were mainstream, but Copernicus and Galileo revolutions changed people&rsquo;s perception of the world. In 20th century men landed on the Moon and nobody is claims that knowledge which in Medieval was mainstream is now valid.</p>
+
+<p>In 2014 Java world was introduced to functional programming &ndash; <a href="http://www.lambdafaq.org/">lambdas and streams API were introduced in Java 8</a>. So now imperative, object oriented programming is what average Java considers &ldquo;mainstream&rdquo;, but is it ultimate, one and only way of writing Java code? No, Venkat shows that functional programming in Java not only is possible, but superior to current standards. Declarative, functional code is both more readable and efficient comparing to classic imperative code. To do the transition, programmer must change way of thinking &ndash; once he does, he&rsquo;ll feel benefits.</p>
+
+<p>Venkat explained &ldquo;scary&rdquo; functional programming concepts in very plain and clear was. For example it&rsquo;s his explaination of lazy evaluation, which feets in tweet:</p>
+
+<blockquote class="twitter-tweet" lang="en"><p>&quot;Do you have homework?&quot;&#10;&quot;Yes.&quot;&#10;&quot;Have you done it?&quot;&#10;&quot;Yes.&quot;&#10;&quot;Can you show me?&quot;&#10;&#8230; &lt;WIP&gt;&#10;- lazy evaluation explained by <a href="https://twitter.com/venkat_s">@venkat_s</a> <a href="https://twitter.com/hashtag/33rdDegree?src=hash">#33rdDegree</a></p>&mdash; Grzegorz Rożniecki (@xaerxess) <a href="https://twitter.com/xaerxess/statuses/476718893965524992">June 11, 2014</a></blockquote>
+
+
+<script async src="http://xaerxess.pl//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>If you wasn&rsquo;t on this keynote, you should watch it when it&rsquo;s published, because all of that was told with help of audience member, <a href="https://twitter.com/mmskrzyp">Maria</a>, who was asked by Venkat to volunteer and do the keynote with him.</p>
+
+<blockquote class="twitter-tweet" lang="en"><p>&quot;<a href="https://twitter.com/tomekcejner">@tomekcejner</a>: Today <a href="https://twitter.com/hashtag/33rdDegree?src=hash">#33rdDegree</a> <a href="https://twitter.com/mmskrzyp">@mmskrzyp</a> was pair-presenting with <a href="https://twitter.com/venkat_s">@venkat_s</a> - learn from masters ;) <a href="http://t.co/kpUs3wggfY">pic.twitter.com/kpUs3wggfY</a>&quot; <a href="https://twitter.com/hashtag/100happydays?src=hash">#100happydays</a></p>&mdash; Maria Skrzypek (@mmskrzyp) <a href="https://twitter.com/mmskrzyp/statuses/476716987121672192">June 11, 2014</a></blockquote>
+
+
+<script async src="http://xaerxess.pl//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>The keynote turned out to be fantastic and I really look forward to see more Venkat&rsquo;s talks.</p>
+
+<h1>Get Unblocked</h1>
+
+<iframe src="http://xaerxess.pl//www.slideshare.net/slideshow/embed_code/35759886?rel=0" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/denisejacobs/get-unblocked-33rd-degree-conference" title="Get Unblocked - 33rd Degree Conference" target="_blank">Get Unblocked &ndash; 33rd Degree Conference</a> </strong> from <strong><a href="http://www.slideshare.net/denisejacobs" target="_blank">Denise Jacobs</a></strong> </div></p>
+
+<p>I did a longer break before last session and skipped Eclipse keynote entirely, but stayed for the very last part of 2014 33rd Degree. Not only I didn&rsquo;t regret waiting for last keynote, but I found it very motivating and stimulating (similarly to Daniel Steinberg&rsquo;s one from the day 2). What&rsquo;s more, <a href="https://twitter.com/denisejacobs">Denise Jacobs</a> presentation was an excellent closure to whole conference: it had subtitle &ldquo;Allow Creativity to Flow&rdquo;, mentioning flow there wasn&rsquo;t a coincidence &ndash; it&rsquo;s the same flow from day 1 keynotes, so clearly flow was conference MVP.</p>
+
+<p>In the beginning Denise did a comparison:</p>
+
+<blockquote class="twitter-tweet" lang="en"><p>&quot;Programmers are alchemists - they take ideas and transform them to something tangible.&quot; <a href="https://twitter.com/denisejacobs">@denisejacobs</a> in <a href="https://twitter.com/hashtag/GetUnblocked?src=hash">#GetUnblocked</a> keynote <a href="https://twitter.com/hashtag/33rdDegree?src=hash">#33rdDegree</a></p>&mdash; Grzegorz Rożniecki (@xaerxess) <a href="https://twitter.com/xaerxess/statuses/476729277728456704">June 11, 2014</a></blockquote>
+
+
+<script async src="http://xaerxess.pl//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>So programming feels like magic. But it&rsquo;s not. It&rsquo;s magical, but not magic, because developers use creativity for everyday work. In real life we are distracted by management, bureaucracy, time constraints, hard working conditions, etc. So how achieve flow? There are many ways, Denise mentioned several practical examples:</p>
+
+<ul>
+<li>rest or lay down, have a daydream,</li>
+<li>get shower and relax,</li>
+<li>get physical,</li>
+<li>don&rsquo;t write TODO lists, write TODON&rsquo;T lists,</li>
+<li>say NO to distraction (i.e. wear headphones).</li>
+</ul>
+
+
+<p>But what about title? Why should we get unblocked, what exactly blocks us? Well, there could be any experience which stops us from being creative, some memory from childhood or situation from work, anything. If we realize that and rejects all these blocks and fears, we&rsquo;ll succeed and we&rsquo;ll be fulfilled and happy doing what we do.</p>
+
+<blockquote class="twitter-tweet" lang="en"><p>Highly inspiring talk on unblocking creativity by <a href="https://twitter.com/denisejacobs">@denisejacobs</a> at <a href="https://twitter.com/hashtag/33rdDegree?src=hash">#33rdDegree</a> <a href="http://t.co/w3KNLKaMWN">pic.twitter.com/w3KNLKaMWN</a></p>&mdash; Maria Skrzypek (@mmskrzyp) <a href="https://twitter.com/mmskrzyp/statuses/476741716209598465">June 11, 2014</a></blockquote>
+
+
+<script async src="http://xaerxess.pl//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>Very often we have flawed and false picture of ourselves, but obviously &ldquo;You can&rsquo;t compare your insides to other people outsides&rdquo; &ndash; our &ldquo;inner critic&rdquo; does comparisons wrong. What we can do is to move forward, unblock ourselves and be creative, then the joy will come.</p>
+
+<h1>Epilogue</h1>
+
+<p>Now I can see why conference budget is important for companies which want to have great coders &ndash; meeting other enthusiasts, Open Source communities&#8217; members, &ldquo;charging batteries&rdquo; with motivating creativity talks &ndash; all this gave me something I was missing and I hadn&rsquo;t even knew.</p>
+
+<p>I was sitting in hallway alone, just twenty minutes after the conference ended (I live just 15 minutes by bike from the place where 33rd Degree was held) I realized that there are many thing in my life I can change and make better. So with this post it begins. I hope <strong>you</strong> enjoyed reading. If you attended 33rd Degree, I hope that it was a good remainder about what you experienced. If you wasn&rsquo;t there in 2014, I&rsquo;d like you to wait for recordings and see what possibly interested you.</p>
+
+<p>Initially I wanted to write about all talks I attended, but as you see I&rsquo;m quite verbose and it&rsquo;ll be far to long post if I mentioned them. Maybe one day&hellip;</p>
+
+<p>One more mention &ndash; special thanks for Spatrez for bringing real coffee to 33rd Degree and kudos to barista who even in third day, after thousands of coffees, did proper, tasty lattes and cappucinos.</p>
+
+<blockquote class="twitter-tweet" lang="en"><p>Nearly 1200 coffees served by <a href="https://twitter.com/ThisIsSpartez">@ThisIsSpartez</a> drunk at <a href="https://twitter.com/hashtag/33rdDegree?src=hash">#33rdDegree</a>. I hope you enjoyed it.</p>&mdash; Wojciech Seliga (@wseliga) <a href="https://twitter.com/wseliga/statuses/476728687124287488">June 11, 2014</a></blockquote>
+
+
+<script async src="http://xaerxess.pl//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>It seems I consumed almost 1% of coffees served there :)</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p><a href="http://martinfowler.com/bliki/AgileVersusLean.html">Quick introduction via Martin Fowler</a>: _You don&rsquo;t do agile or lean you do agile and lean.<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[How I hijacked a CPAN module]]></title>
-    <link href="http://xaerxess.github.io/blog/2014/03/12/how-i-hijacked-a-cpan-module.html"/>
+    <link href="http://xaerxess.pl/blog/2014/03/12/how-i-hijacked-a-cpan-module.html"/>
     <updated>2014-03-12T19:01:51+01:00</updated>
-    <id>http://xaerxess.github.io/blog/2014/03/12/how-i-hijacked-a-cpan-module</id>
+    <id>http://xaerxess.pl/blog/2014/03/12/how-i-hijacked-a-cpan-module</id>
     <content type="html"><![CDATA[<p>Today Neil Bowers (<a href="https://twitter.com/neilbowers/">@neilbowers</a>) wrote a blog post titled <a href="http://neilb.org/2014/03/11/uploading-01.html">&ldquo;What happens when you upload to CPAN?&rdquo;</a> &ndash; a sneak peek at the very last part of module releasing process (when you do <code>cpan-upload</code> and recieve these two strange emails). Although I&rsquo;ve already released few distributions, <a href="https://pause.perl.org">PAUSE</a> still seems to me as a mysterious tool with design (i.e. web interface) from previous epoch<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>, but somehow capable of managing over 29000 distributions maintained by over 11000 authors. <!-- more -->What intrigued me in Neil&rsquo;s article was the &ldquo;hairy&rdquo; part (namespace indexer), particularly a conclusion (<em>&ldquo;the permissions check should be separate from, and earlier than, the indexing stage&rdquo;</em>) and these three points:</p>
 
 <blockquote><ul>
@@ -69,9 +278,9 @@ YAML::AppConfig,XAERXESS,f
   
   <entry>
     <title type="html"><![CDATA[Using ExtUtils::MakeMaker for my first co-maint release - Bloom::Filter]]></title>
-    <link href="http://xaerxess.github.io/blog/2014/02/28/using-extutils-makemaker-for-my-first-co-maint-release-bloom-filter.html"/>
+    <link href="http://xaerxess.pl/blog/2014/02/28/using-extutils-makemaker-for-my-first-co-maint-release-bloom-filter.html"/>
     <updated>2014-02-28T16:32:34+01:00</updated>
-    <id>http://xaerxess.github.io/blog/2014/02/28/using-extutils-makemaker-for-my-first-co-maint-release-bloom-filter</id>
+    <id>http://xaerxess.pl/blog/2014/02/28/using-extutils-makemaker-for-my-first-co-maint-release-bloom-filter</id>
     <content type="html"><![CDATA[<p>After over 7 years, a new release of <a href="https://metacpan.org/release/XAERXESS/Bloom-Filter-1.1"><code>Bloom::Filter</code></a> is out! Thanks to Maciej Ceglowski (<a href="https://metacpan.org/author/MCEGLOWS">MCEGLOWS</a> / <a href="https://twitter.com/baconmeteor">@baconmeteor</a>), who was kind enough to give me co-maint permissions. If you don&rsquo;t know what bloom filter is<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>, please read <a href="http://www.perl.com/pub/2004/04/08/bloom_filters.html">&ldquo;Using Bloom Filters&rdquo;</a> (article written by Maciej in 2004, but still up-to-date and very interesting). Instead of writing about bloom filters, in this blog post I&rsquo;d like to concentrate on Perl module release process, as a part of my personal &ldquo;diving into Perl&rdquo; process.</p>
 
 <!-- more -->
@@ -140,10 +349,10 @@ say $version;
   
   <entry>
     <title type="html"><![CDATA[About blogging - a case study]]></title>
-    <link href="http://xaerxess.github.io/blog/2014/02/23/about-blogging-a-case-study.html"/>
+    <link href="http://xaerxess.pl/blog/2014/02/23/about-blogging-a-case-study.html"/>
     <updated>2014-02-23T16:16:11+01:00</updated>
-    <id>http://xaerxess.github.io/blog/2014/02/23/about-blogging-a-case-study</id>
-    <content type="html"><![CDATA[<p>To blog or not to blog: that is the question. Or is it? I believe that today, in <a href="http://en.wikipedia.org/wiki/Web_2.0">Web 2.0 era</a>, everyone should share the knowledge, exchange thoughts, make the world better place, etc. (<a href="http://xaerxess.github.io/blog/2014/01/27/manifest-or-future-content-of-this-blog.html">see previous post about blogging</a>). Yes, it may sound a bit idealistic, but I&rsquo;ve always wanted to have a personal blog about programming and stuff I do, because I think it can make a difference for someone. In my case blogging didn&rsquo;t work out (until now), probably because of two assumtions I made: write regularly <em>in Polish</em> and serve blog <em>on my own blog engine on my own VPS</em>. <a href="http://xaerxess.alwaysdata.net/">My first try from 2009</a> is still out there &ndash; it was a blog engine written in <a href="https://www.djangoproject.com/">Django</a> (a <a href="http://python.org/">Python</a> web framework), styled with custom, rather primitive CSS and filled with very few posts. As a small, personal project it failed, but because an old Polish sentence says &ldquo;humans learn from failures&rdquo; (I don&rsquo;t know if there&rsquo;s English equivalent), I&rsquo;ll write down what was wrong back then and what I&rsquo;ll try to do this time.</p>
+    <id>http://xaerxess.pl/blog/2014/02/23/about-blogging-a-case-study</id>
+    <content type="html"><![CDATA[<p>To blog or not to blog: that is the question. Or is it? I believe that today, in <a href="http://en.wikipedia.org/wiki/Web_2.0">Web 2.0 era</a>, everyone should share the knowledge, exchange thoughts, make the world better place, etc. (<a href="http://xaerxess.pl/blog/2014/01/27/manifest-or-future-content-of-this-blog.html">see previous post about blogging</a>). Yes, it may sound a bit idealistic, but I&rsquo;ve always wanted to have a personal blog about programming and stuff I do, because I think it can make a difference for someone. In my case blogging didn&rsquo;t work out (until now), probably because of two assumtions I made: write regularly <em>in Polish</em> and serve blog <em>on my own blog engine on my own VPS</em>. <a href="http://xaerxess.alwaysdata.net/">My first try from 2009</a> is still out there &ndash; it was a blog engine written in <a href="https://www.djangoproject.com/">Django</a> (a <a href="http://python.org/">Python</a> web framework), styled with custom, rather primitive CSS and filled with very few posts. As a small, personal project it failed, but because an old Polish sentence says &ldquo;humans learn from failures&rdquo; (I don&rsquo;t know if there&rsquo;s English equivalent), I&rsquo;ll write down what was wrong back then and what I&rsquo;ll try to do this time.</p>
 
 <!-- more -->
 
@@ -165,9 +374,9 @@ say $version;
   
   <entry>
     <title type="html"><![CDATA[New module on CPAN - Task::BeLike::XAERXESS]]></title>
-    <link href="http://xaerxess.github.io/blog/2014/01/31/new-module-on-cpan-task-belike-xaerxess.html"/>
+    <link href="http://xaerxess.pl/blog/2014/01/31/new-module-on-cpan-task-belike-xaerxess.html"/>
     <updated>2014-01-31T22:38:02+01:00</updated>
-    <id>http://xaerxess.github.io/blog/2014/01/31/new-module-on-cpan-task-belike-xaerxess</id>
+    <id>http://xaerxess.pl/blog/2014/01/31/new-module-on-cpan-task-belike-xaerxess</id>
     <content type="html"><![CDATA[<p><a href="https://metacpan.org/pod/perlbrew">Perlbrew</a> is a great module. I use it on every machine &ndash; it lets me install modern Perl versions on systems which ship with ancient a.k.a. good-old perls like 5.8 or even those from previous millennium. But there comes a problem &ndash; every perlbrewed perl has a separate environment and it lacks all CPAN goodies you installed and used earlier. Plus, if you have few machines and / or like to experiment with various operating systems (like me), you have to install modules you use again and again.</p>
 
 <p>To address this issue I&rsquo;ve released <a href="https://metacpan.org/release/Task-BeLike-XAERXESS"><code>Task::BeLike::XAERXESS</code></a>. It&rsquo;s a <a href="Task"><code>Task</code></a> module which has a simple purpose &ndash; it installs a module bundle <em>I</em> frequently use. What&rsquo;s more, because I uploaded it to <a href="http://www.cpan.org/">CPAN</a>, <em>you</em> can use install, try or modify it (the <a href="https://github.com/Xaerxess/Task-BeLike-XAERXESS">source code is on GitHub</a>).</p>
@@ -185,9 +394,9 @@ say $version;
   
   <entry>
     <title type="html"><![CDATA[MANIFEST - or (future) content of this blog]]></title>
-    <link href="http://xaerxess.github.io/blog/2014/01/27/manifest-or-future-content-of-this-blog.html"/>
+    <link href="http://xaerxess.pl/blog/2014/01/27/manifest-or-future-content-of-this-blog.html"/>
     <updated>2014-01-27T00:04:43+01:00</updated>
-    <id>http://xaerxess.github.io/blog/2014/01/27/manifest-or-future-content-of-this-blog</id>
+    <id>http://xaerxess.pl/blog/2014/01/27/manifest-or-future-content-of-this-blog</id>
     <content type="html"><![CDATA[<p>I&rsquo;m starting a programming blog (again). I don&rsquo;t know if it&rsquo;ll be successful (where <em>successful</em> means <em>updated regularly</em> for me), but I&rsquo;d like to begin with meta-post about what I <em>want</em> to have here. Since I&rsquo;ve been (proffesionally) working as a <a href="http://www.perl.org/">Perl</a>, Java and JavaScript developer for few years, vast amount of topics will be about these programming languages, with Perl being main one.</p>
 
 <p>Short clarification here: Perl has a facinating community with really, really great developers, and if you look back to previous sentence you&rsquo;ll see that I only linked to Perl webpage, contrary to Java and JavaScript. The reason is simple: <!-- more --> these two J* languages have no proper webpages and no <em>(open-source)</em> community. You can go to java.<strong>com</strong> and click big red download button, but that&rsquo;s all. Google &ldquo;java&rdquo; and you&rsquo;ll see &ldquo;Oracle&rdquo; and &ldquo;™&rdquo; higher than &ldquo;OpenJDK&rdquo;. Typing JavaScript in Google gives you <strong>zero</strong> language/community hits (let me just say that w3schools is first one); <a href="http://www.ecmascript.org/">ECMAScript</a> is all about standards and many JS devs aren&rsquo;t be able to tell what ECMAScript is.</p>

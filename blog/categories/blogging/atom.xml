@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: blogging | Yet another programming blog]]></title>
-  <link href="http://xaerxess.github.io/blog/categories/blogging/atom.xml" rel="self"/>
-  <link href="http://xaerxess.github.io/"/>
-  <updated>2014-03-14T19:05:13+01:00</updated>
-  <id>http://xaerxess.github.io/</id>
+  <link href="http://xaerxess.pl/blog/categories/blogging/atom.xml" rel="self"/>
+  <link href="http://xaerxess.pl/"/>
+  <updated>2014-06-27T15:09:49+02:00</updated>
+  <id>http://xaerxess.pl/</id>
   <author>
     <name><![CDATA[Grzegorz Rożniecki]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[About blogging - a case study]]></title>
-    <link href="http://xaerxess.github.io/blog/2014/02/23/about-blogging-a-case-study.html"/>
+    <link href="http://xaerxess.pl/blog/2014/02/23/about-blogging-a-case-study.html"/>
     <updated>2014-02-23T16:16:11+01:00</updated>
-    <id>http://xaerxess.github.io/blog/2014/02/23/about-blogging-a-case-study</id>
+    <id>http://xaerxess.pl/blog/2014/02/23/about-blogging-a-case-study</id>
     <content type="html"><![CDATA[<p>To blog or not to blog: that is the question. Or is it? I believe that today, in <a href="http://en.wikipedia.org/wiki/Web_2.0">Web 2.0 era</a>, everyone should share the knowledge, exchange thoughts, make the world better place, etc. (<a href="/blog/2014/01/27/manifest-or-future-content-of-this-blog.html">see previous post about blogging</a>). Yes, it may sound a bit idealistic, but I&rsquo;ve always wanted to have a personal blog about programming and stuff I do, because I think it can make a difference for someone. In my case blogging didn&rsquo;t work out (until now), probably because of two assumtions I made: write regularly <em>in Polish</em> and serve blog <em>on my own blog engine on my own VPS</em>. <a href="http://xaerxess.alwaysdata.net/">My first try from 2009</a> is still out there &ndash; it was a blog engine written in <a href="https://www.djangoproject.com/">Django</a> (a <a href="http://python.org/">Python</a> web framework), styled with custom, rather primitive CSS and filled with very few posts. As a small, personal project it failed, but because an old Polish sentence says &ldquo;humans learn from failures&rdquo; (I don&rsquo;t know if there&rsquo;s English equivalent), I&rsquo;ll write down what was wrong back then and what I&rsquo;ll try to do this time.</p>
 
 <!-- more -->
@@ -40,9 +40,9 @@
   
   <entry>
     <title type="html"><![CDATA[MANIFEST - or (future) content of this blog]]></title>
-    <link href="http://xaerxess.github.io/blog/2014/01/27/manifest-or-future-content-of-this-blog.html"/>
+    <link href="http://xaerxess.pl/blog/2014/01/27/manifest-or-future-content-of-this-blog.html"/>
     <updated>2014-01-27T00:04:43+01:00</updated>
-    <id>http://xaerxess.github.io/blog/2014/01/27/manifest-or-future-content-of-this-blog</id>
+    <id>http://xaerxess.pl/blog/2014/01/27/manifest-or-future-content-of-this-blog</id>
     <content type="html"><![CDATA[<p>I&rsquo;m starting a programming blog (again). I don&rsquo;t know if it&rsquo;ll be successful (where <em>successful</em> means <em>updated regularly</em> for me), but I&rsquo;d like to begin with meta-post about what I <em>want</em> to have here. Since I&rsquo;ve been (proffesionally) working as a <a href="http://www.perl.org/">Perl</a>, Java and JavaScript developer for few years, vast amount of topics will be about these programming languages, with Perl being main one.</p>
 
 <p>Short clarification here: Perl has a facinating community with really, really great developers, and if you look back to previous sentence you&rsquo;ll see that I only linked to Perl webpage, contrary to Java and JavaScript. The reason is simple: <!-- more --> these two J* languages have no proper webpages and no <em>(open-source)</em> community. You can go to java.<strong>com</strong> and click big red download button, but that&rsquo;s all. Google &ldquo;java&rdquo; and you&rsquo;ll see &ldquo;Oracle&rdquo; and &ldquo;™&rdquo; higher than &ldquo;OpenJDK&rdquo;. Typing JavaScript in Google gives you <strong>zero</strong> language/community hits (let me just say that w3schools is first one); <a href="http://www.ecmascript.org/">ECMAScript</a> is all about standards and many JS devs aren&rsquo;t be able to tell what ECMAScript is.</p>

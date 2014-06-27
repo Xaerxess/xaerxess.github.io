@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: CPAN | Yet another programming blog]]></title>
-  <link href="http://xaerxess.github.io/blog/categories/cpan/atom.xml" rel="self"/>
-  <link href="http://xaerxess.github.io/"/>
-  <updated>2014-03-14T19:05:13+01:00</updated>
-  <id>http://xaerxess.github.io/</id>
+  <link href="http://xaerxess.pl/blog/categories/cpan/atom.xml" rel="self"/>
+  <link href="http://xaerxess.pl/"/>
+  <updated>2014-06-27T15:09:49+02:00</updated>
+  <id>http://xaerxess.pl/</id>
   <author>
     <name><![CDATA[Grzegorz Rożniecki]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[How I hijacked a CPAN module]]></title>
-    <link href="http://xaerxess.github.io/blog/2014/03/12/how-i-hijacked-a-cpan-module.html"/>
+    <link href="http://xaerxess.pl/blog/2014/03/12/how-i-hijacked-a-cpan-module.html"/>
     <updated>2014-03-12T19:01:51+01:00</updated>
-    <id>http://xaerxess.github.io/blog/2014/03/12/how-i-hijacked-a-cpan-module</id>
+    <id>http://xaerxess.pl/blog/2014/03/12/how-i-hijacked-a-cpan-module</id>
     <content type="html"><![CDATA[<p>Today Neil Bowers (<a href="https://twitter.com/neilbowers/">@neilbowers</a>) wrote a blog post titled <a href="http://neilb.org/2014/03/11/uploading-01.html">&ldquo;What happens when you upload to CPAN?&rdquo;</a> &ndash; a sneak peek at the very last part of module releasing process (when you do <code>cpan-upload</code> and recieve these two strange emails). Although I&rsquo;ve already released few distributions, <a href="https://pause.perl.org">PAUSE</a> still seems to me as a mysterious tool with design (i.e. web interface) from previous epoch<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>, but somehow capable of managing over 29000 distributions maintained by over 11000 authors. <!-- more -->What intrigued me in Neil&rsquo;s article was the &ldquo;hairy&rdquo; part (namespace indexer), particularly a conclusion (<em>&ldquo;the permissions check should be separate from, and earlier than, the indexing stage&rdquo;</em>) and these three points:</p>
 
 <blockquote><ul>
@@ -69,9 +69,9 @@ YAML::AppConfig,XAERXESS,f
   
   <entry>
     <title type="html"><![CDATA[Using ExtUtils::MakeMaker for my first co-maint release - Bloom::Filter]]></title>
-    <link href="http://xaerxess.github.io/blog/2014/02/28/using-extutils-makemaker-for-my-first-co-maint-release-bloom-filter.html"/>
+    <link href="http://xaerxess.pl/blog/2014/02/28/using-extutils-makemaker-for-my-first-co-maint-release-bloom-filter.html"/>
     <updated>2014-02-28T16:32:34+01:00</updated>
-    <id>http://xaerxess.github.io/blog/2014/02/28/using-extutils-makemaker-for-my-first-co-maint-release-bloom-filter</id>
+    <id>http://xaerxess.pl/blog/2014/02/28/using-extutils-makemaker-for-my-first-co-maint-release-bloom-filter</id>
     <content type="html"><![CDATA[<p>After over 7 years, a new release of <a href="https://metacpan.org/release/XAERXESS/Bloom-Filter-1.1"><code>Bloom::Filter</code></a> is out! Thanks to Maciej Ceglowski (<a href="https://metacpan.org/author/MCEGLOWS">MCEGLOWS</a> / <a href="https://twitter.com/baconmeteor">@baconmeteor</a>), who was kind enough to give me co-maint permissions. If you don&rsquo;t know what bloom filter is<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>, please read <a href="http://www.perl.com/pub/2004/04/08/bloom_filters.html">&ldquo;Using Bloom Filters&rdquo;</a> (article written by Maciej in 2004, but still up-to-date and very interesting). Instead of writing about bloom filters, in this blog post I&rsquo;d like to concentrate on Perl module release process, as a part of my personal &ldquo;diving into Perl&rdquo; process.</p>
 
 <!-- more -->
@@ -140,9 +140,9 @@ say $version;
   
   <entry>
     <title type="html"><![CDATA[New module on CPAN - Task::BeLike::XAERXESS]]></title>
-    <link href="http://xaerxess.github.io/blog/2014/01/31/new-module-on-cpan-task-belike-xaerxess.html"/>
+    <link href="http://xaerxess.pl/blog/2014/01/31/new-module-on-cpan-task-belike-xaerxess.html"/>
     <updated>2014-01-31T22:38:02+01:00</updated>
-    <id>http://xaerxess.github.io/blog/2014/01/31/new-module-on-cpan-task-belike-xaerxess</id>
+    <id>http://xaerxess.pl/blog/2014/01/31/new-module-on-cpan-task-belike-xaerxess</id>
     <content type="html"><![CDATA[<p><a href="https://metacpan.org/pod/perlbrew">Perlbrew</a> is a great module. I use it on every machine &ndash; it lets me install modern Perl versions on systems which ship with ancient a.k.a. good-old perls like 5.8 or even those from previous millennium. But there comes a problem &ndash; every perlbrewed perl has a separate environment and it lacks all CPAN goodies you installed and used earlier. Plus, if you have few machines and / or like to experiment with various operating systems (like me), you have to install modules you use again and again.</p>
 
 <p>To address this issue I&rsquo;ve released <a href="https://metacpan.org/release/Task-BeLike-XAERXESS"><code>Task::BeLike::XAERXESS</code></a>. It&rsquo;s a <a href="Task"><code>Task</code></a> module which has a simple purpose &ndash; it installs a module bundle <em>I</em> frequently use. What&rsquo;s more, because I uploaded it to <a href="http://www.cpan.org/">CPAN</a>, <em>you</em> can use install, try or modify it (the <a href="https://github.com/Xaerxess/Task-BeLike-XAERXESS">source code is on GitHub</a>).</p>

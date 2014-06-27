@@ -1,69 +1,71 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>
-            http://xaerxess.github.io/blog/2014/01/27/manifest-or-future-content-of-this-blog.html
-        </loc>
-        <lastmod>2014-03-14T18:32:45+01:00</lastmod>
+        <loc>http://xaerxess.pl/blog/2014/01/27/manifest-or-future-content-of-this-blog.html</loc>
+        <lastmod>2014-06-27T15:08:51+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://xaerxess.pl/blog/2014/01/31/new-module-on-cpan-task-belike-xaerxess.html</loc>
+        <lastmod>2014-06-27T15:08:51+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://xaerxess.pl/blog/2014/02/23/about-blogging-a-case-study.html</loc>
+        <lastmod>2014-06-27T15:08:51+02:00</lastmod>
     </url>
     <url>
         <loc>
-            http://xaerxess.github.io/blog/2014/01/31/new-module-on-cpan-task-belike-xaerxess.html
+            http://xaerxess.pl/blog/2014/02/28/using-extutils-makemaker-for-my-first-co-maint-release-bloom-filter.html
         </loc>
-        <lastmod>2014-03-14T18:32:45+01:00</lastmod>
+        <lastmod>2014-06-27T15:08:51+02:00</lastmod>
     </url>
     <url>
-        <loc>http://xaerxess.github.io/blog/2014/02/23/about-blogging-a-case-study.html</loc>
-        <lastmod>2014-03-14T18:32:45+01:00</lastmod>
+        <loc>http://xaerxess.pl/blog/2014/03/12/how-i-hijacked-a-cpan-module.html</loc>
+        <lastmod>2014-06-27T15:08:51+02:00</lastmod>
     </url>
     <url>
         <loc>
-            http://xaerxess.github.io/blog/2014/02/28/using-extutils-makemaker-for-my-first-co-maint-release-bloom-filter.html
+            http://xaerxess.pl/blog/2014/06/27/more-agile-than-java-keynotes-from-33rd-degree-2014.html
         </loc>
-        <lastmod>2014-03-14T18:32:45+01:00</lastmod>
+        <lastmod>2014-06-27T15:08:51+02:00</lastmod>
     </url>
     <url>
-        <loc>http://xaerxess.github.io/blog/2014/03/12/how-i-hijacked-a-cpan-module.html</loc>
-        <lastmod>2014-03-14T19:03:42+01:00</lastmod>
+        <loc>http://xaerxess.pl/assets/bootstrap/getting-started.html</loc>
+        <lastmod>2014-06-27T15:08:51+02:00</lastmod>
     </url>
     <url>
-        <loc>http://xaerxess.github.io/</loc>
-        <lastmod>2014-03-14T19:03:42+01:00</lastmod>
+        <loc>http://xaerxess.pl/assets/bootstrap/</loc>
+        <lastmod>2014-06-27T15:08:51+02:00</lastmod>
     </url>
     <url>
-        <loc>http://xaerxess.github.io/assets/bootstrap/</loc>
-        <lastmod>2014-03-14T19:03:42+01:00</lastmod>
+        <loc>http://xaerxess.pl/assets/bootstrap/about.html</loc>
+        <lastmod>2014-06-27T15:08:51+02:00</lastmod>
     </url>
     <url>
-        <loc>http://xaerxess.github.io/assets/bootstrap/javascript.html</loc>
-        <lastmod>2014-03-14T18:32:45+01:00</lastmod>
+        <loc>http://xaerxess.pl/assets/bootstrap/javascript.html</loc>
+        <lastmod>2014-06-27T15:08:51+02:00</lastmod>
     </url>
     <url>
-        <loc>http://xaerxess.github.io/assets/bootstrap/customize.html</loc>
-        <lastmod>2014-03-14T18:32:45+01:00</lastmod>
+        <loc>http://xaerxess.pl/assets/bootstrap/css.html</loc>
+        <lastmod>2014-06-27T15:08:51+02:00</lastmod>
     </url>
     <url>
-        <loc>http://xaerxess.github.io/assets/bootstrap/getting-started.html</loc>
-        <lastmod>2014-03-14T18:32:45+01:00</lastmod>
+        <loc>http://xaerxess.pl/assets/bootstrap/components.html</loc>
+        <lastmod>2014-06-27T15:08:51+02:00</lastmod>
     </url>
     <url>
-        <loc>http://xaerxess.github.io/assets/bootstrap/components.html</loc>
-        <lastmod>2014-03-14T18:32:45+01:00</lastmod>
+        <loc>http://xaerxess.pl/assets/bootstrap/customize.html</loc>
+        <lastmod>2014-06-27T15:08:51+02:00</lastmod>
     </url>
     <url>
-        <loc>http://xaerxess.github.io/assets/bootstrap/css.html</loc>
-        <lastmod>2014-03-14T18:32:45+01:00</lastmod>
+        <loc>http://xaerxess.pl/</loc>
+        <lastmod>2014-06-27T15:08:51+02:00</lastmod>
     </url>
     <url>
-        <loc>http://xaerxess.github.io/assets/bootstrap/about.html</loc>
-        <lastmod>2014-03-14T18:32:45+01:00</lastmod>
+        <loc>http://xaerxess.pl/blog/archives/</loc>
+        <lastmod>2014-06-27T15:08:51+02:00</lastmod>
     </url>
     <url>
-        <loc>http://xaerxess.github.io/blog/archives/</loc>
-        <lastmod>2014-03-14T19:03:42+01:00</lastmod>
-    </url>
-    <url>
-        <loc>http://xaerxess.github.io/robots.txt</loc>
-        <lastmod>2014-03-14T18:32:45+01:00</lastmod>
+        <loc>http://xaerxess.pl/robots.txt</loc>
+        <lastmod>2014-06-27T15:08:51+02:00</lastmod>
     </url>
 </urlset>
