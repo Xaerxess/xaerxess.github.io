@@ -105,7 +105,7 @@ Venkat explained "scary" functional programming concepts in very plain and clear
 <blockquote class="twitter-tweet" lang="en"><p>&quot;Do you have homework?&quot;&#10;&quot;Yes.&quot;&#10;&quot;Have you done it?&quot;&#10;&quot;Yes.&quot;&#10;&quot;Can you show me?&quot;&#10;... &lt;WIP&gt;&#10;- lazy evaluation explained by <a href="https://twitter.com/venkat_s">@venkat_s</a> <a href="https://twitter.com/hashtag/33rdDegree?src=hash">#33rdDegree</a></p>&mdash; Grzegorz Rożniecki (@xaerxess) <a href="https://twitter.com/xaerxess/statuses/476718893965524992">June 11, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-If you wasn't on this keynote, you should watch it when it's published, because all of that was told with help of audience member, [Maria](https://twitter.com/mmskrzyp), who was asked by Venkat to volunteer and do the keynote with him.
+If you weren't on this keynote, you should watch it when it's published, because all of that was told with help of audience member, [Maria](https://twitter.com/mmskrzyp), who was asked by Venkat to volunteer and do the keynote with him.
 
 <blockquote class="twitter-tweet" lang="en"><p>&quot;<a href="https://twitter.com/tomekcejner">@tomekcejner</a>: Today <a href="https://twitter.com/hashtag/33rdDegree?src=hash">#33rdDegree</a> <a href="https://twitter.com/mmskrzyp">@mmskrzyp</a> was pair-presenting with <a href="https://twitter.com/venkat_s">@venkat_s</a> - learn from masters ;) <a href="http://t.co/kpUs3wggfY">pic.twitter.com/kpUs3wggfY</a>&quot; <a href="https://twitter.com/hashtag/100happydays?src=hash">#100happydays</a></p>&mdash; Maria Skrzypek (@mmskrzyp) <a href="https://twitter.com/mmskrzyp/statuses/476716987121672192">June 11, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -143,7 +143,7 @@ Very often we have flawed and false picture of ourselves, but obviously "You can
 
 Now I can see why conference budget is important for companies which want to have great coders - meeting other enthusiasts, Open Source communities' members, "charging batteries" with motivating creativity talks - all this gave me something I was missing and I hadn't even knew.
 
-I was sitting in hallway alone, just twenty minutes after the conference ended (I live just 15 minutes by bike from the place where 33rd Degree was held) I realized that there are many thing in my life I can change and make better. So with this post it begins. I hope **you** enjoyed reading. If you attended 33rd Degree, I hope that it was a good remainder about what you experienced. If you wasn't there in 2014, I'd like you to wait for recordings and see what possibly interested you.
+I was sitting in hallway alone, just twenty minutes after the conference ended (I live just 15 minutes by bike from the place where 33rd Degree was held) I realized that there are many thing in my life I can change and make better. So with this post it begins. I hope **you** enjoyed reading. If you attended 33rd Degree, I hope that it was a good remainder about what you experienced. If you weren't there in 2014, I'd like you to wait for recordings and see what possibly interested you.
 
 Initially I wanted to write about all talks I attended, but as you see I'm quite verbose and it'll be far to long post if I mentioned them. Maybe one day...
 
@@ -154,4 +154,4 @@ One more mention - special thanks for Spatrez for bringing real coffee to 33rd D
 
 It seems I consumed almost 1% of coffees served there :)
 
-[^1]:  [Quick introduction via Martin Fowler](http://martinfowler.com/bliki/AgileVersusLean.html): _You don't do agile or lean you do agile and lean.
+[^1]:  [Quick introduction by Martin Fowler](http://martinfowler.com/bliki/AgileVersusLean.html): _You don't do agile or lean you do agile and lean_.
