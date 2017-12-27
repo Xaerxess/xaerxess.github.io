@@ -28,7 +28,7 @@ However, what should I do to make a realease of EUMM module was not very obvious
 
 So I found out EUMM is not a distribution making swiss knife, just a tool for managing Makefile creation process. That said, I don't see a reason to use "raw" `ExtUtils::MakeMaker` or `Module::Build` plus some release tool instead of `Dist::Milla` - for my needs it's more than enough, it takes care of all boilercode _I_ don't need to write, does all git-related release stuff, and changes version all over module.[^5]
 
-Speaking of versioning - according to [David Golden's article](http://www.dagolden.com/index.php/369/version-numbers-should-be-boring/), it should be a boring task. It wasn't, at least this time. I had to face two (actually three, third was, as always in Perl, [TIMTOWTDI](http://en.wikipedia.org/wiki/There's_more_than_one_way_to_do_it)) issues here:
+Speaking of versioning - according to [David Golden's article](http://www.dagolden.com/index.php/369/version-numbers-should-be-boring/), it should be a boring task. It wasn't, at least this time. I had to face two (actually three, third was, as always in Perl, [TIMTOWTDI](https://en.wikipedia.org/wiki/There's_more_than_one_way_to_do_it)) issues here:
 
  - There was already [1.1 release on BackPAN](https://metacpan.org/release/KJETIL/Bloom-Filter-1.1) (How is that possible?)
  - What is proper next development release for 1.0? I tried
@@ -43,7 +43,7 @@ I've decided to just do one release for 1.1, without any dev releases. Luckilly,
 
 Oh, there's this question which I am asking myself: should I move an old (i.e. co-maintained) module to `Dist::Milla`, or should it stay on EUMM forever?
 
-[^1]: In few words: bloom filter is a space-efficient probabilistic data structure, which is used to test whether an element is a member of a set (_[from Wikipedia](http://en.wikipedia.org/wiki/Bloom_filter)_).
+[^1]: In few words: bloom filter is a space-efficient probabilistic data structure, which is used to test whether an element is a member of a set (_[from Wikipedia](https://en.wikipedia.org/wiki/Bloom_filter)_).
 [^2]: Actually I don't know how to filter closed issues which were fixed in 1.1 on RT... Any help?
 [^3]: I have to write a blog post about my `dzil` and `milla` experiences eventually...
 [^4]: I deliberately listed tools which aren't used to same tasks, although my first impression was different.

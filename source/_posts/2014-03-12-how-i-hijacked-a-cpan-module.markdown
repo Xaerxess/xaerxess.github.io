@@ -33,7 +33,7 @@ Anyway, does module hijacking counts as a module adoption?
 
 **Follow-up**
 
-I didn't mean to disclose potential security threat, and I'm sure I'll be more careful in the future writing about similar issues. Luckily, as you can see [in the comment](http://localhost:4000/blog/2014/03/12/how-i-hijacked-a-cpan-module.html#comment-1283194094), [@rjbs](https://twitter.com/rjbs) was in the right place in the right time (i.e. [Perl QA Hackaton 2014](http://act.qa-hackathon.org/qa2014/)) and [fixed the bug](https://github.com/andk/pause/commit/d3e76f314c33570b2670b07eb7c2a93ccfcec66a) in PAUSE.
+I didn't mean to disclose potential security threat, and I'm sure I'll be more careful in the future writing about similar issues. Luckily, as you can see [in the comment](/blog/2014/03/12/how-i-hijacked-a-cpan-module.html#comment-1283194094), [@rjbs](https://twitter.com/rjbs) was in the right place in the right time (i.e. [Perl QA Hackaton 2014](http://act.qa-hackathon.org/qa2014/)) and [fixed the bug](https://github.com/andk/pause/commit/d3e76f314c33570b2670b07eb7c2a93ccfcec66a) in PAUSE.
 
 To be honest, I looked at PAUSE code after I had "hijacked" module, but setting up PAUSE is ["Very Hard™"](https://twitter.com/rjbs/status/444185178811146240). For example, I didn't have any [Apache 1.3 with mod_perl1](https://github.com/andk/pause/blob/66f72204e24957415f5d2aca3fba519661beb2d8/doc/README#L142) ready at hand, nor any spare time to compile it. Hope it'll be easier in the future.
 

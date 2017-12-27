@@ -26,11 +26,11 @@ Developers should create right thing to develop, so adding a value to the produc
 
 Flow, according to Mary, is each programmers goal, a nirvana everybody should should seek and chase.
 
-![Challenge vs. skill](http://upload.wikimedia.org/wikipedia/commons/f/f6/Challenge_vs_skill.svg)
+![Challenge vs. skill](https://upload.wikimedia.org/wikipedia/commons/f/f6/Challenge_vs_skill.svg)
 
 Since flow appeared in almost every keynote on 33rd Degree, I think it's quite important for each programmer to understand what this diagram means - more skilled developer **needs** new challenges, or else he won't be satisfied.
 
-As final advice Marry told us to remember about [sharpening the saw](http://c2.com/cgi/wiki?SharpenTheSaw) - an ability to improve programming skills by doing something which _isn't_ programming. [Jeff Atwood](http://blog.codinghorror.com/sharpening-the-saw/) mentions reading programming blogs, [HN](https://news.ycombinator.com/), [proggit](http://www.reddit.com/r/programming); I'd add to that list writing on [StackOverflow](http://stackoverflow.com/), following other devs on [Twitter](https://twitter.com), and (starting from 33rd Degree) attending to conferences.
+As final advice Marry told us to remember about [sharpening the saw](http://c2.com/cgi/wiki?SharpenTheSaw) - an ability to improve programming skills by doing something which _isn't_ programming. [Jeff Atwood](https://blog.codinghorror.com/sharpening-the-saw/) mentions reading programming blogs, [HN](https://news.ycombinator.com/), [proggit](https://www.reddit.com/r/programming); I'd add to that list writing on [StackOverflow](https://stackoverflow.com/), following other devs on [Twitter](https://twitter.com), and (starting from 33rd Degree) attending to conferences.
 
 # Managers are from Mars, Developers are from Venus
 
@@ -49,7 +49,7 @@ Developers struggle with managers who are like from another planet, because thes
 
 Ted compared flow to sleep - you can't force yourself to sleep, you can only setup appropriate conditions for it. And meetings with management, phone calls, etc. don't help in that.
 
-The keynote was also a (small) rant on role of project managers role in modern software development. Well, it wasn't a rant _per se_, but rather small history lesson about "scientific management" and its creator, [Frederick Taylor](http://en.wikipedia.org/wiki/Frederick_Winslow_Taylor). Long story short: The entire industry is broken because "scientific management" was a lie. Taylor authored "The Principles of Scientific Management" which consisted a basis for what is nowadays taught on Harvard, but his research was actually mostly made up! His "science" wasn't really science, since it couldn't be validated, but nonetheless his ideas spread around the world and still are by many considered as valid.
+The keynote was also a (small) rant on role of project managers role in modern software development. Well, it wasn't a rant _per se_, but rather small history lesson about "scientific management" and its creator, [Frederick Taylor](https://en.wikipedia.org/wiki/Frederick_Winslow_Taylor). Long story short: The entire industry is broken because "scientific management" was a lie. Taylor authored "The Principles of Scientific Management" which consisted a basis for what is nowadays taught on Harvard, but his research was actually mostly made up! His "science" wasn't really science, since it couldn't be validated, but nonetheless his ideas spread around the world and still are by many considered as valid.
 
 There was also a story about [Scott Adams](en.wikipedia.org/wiki/Scott_Adams), creator of [Dilbert](dilbert.com), which basically showed how fuzzy is project management as a discipline. Funny and not funny at the same time.
 
@@ -154,4 +154,4 @@ One more mention - special thanks for Spatrez for bringing real coffee to 33rd D
 
 It seems I consumed almost 1% of coffees served there :)
 
-[^1]:  [Quick introduction by Martin Fowler](http://martinfowler.com/bliki/AgileVersusLean.html): _You don't do agile or lean you do agile and lean_.
+[^1]:  [Quick introduction by Martin Fowler](https://martinfowler.com/bliki/AgileVersusLean.html): _You don't do agile or lean you do agile and lean_.
