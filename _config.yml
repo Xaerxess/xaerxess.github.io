@@ -2,11 +2,11 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://xaerxess.pl
+url: https://xaerxess.pl
 title: Yet another programming blog
 subtitle: ~/xaerxess.pl --verbose
 author: Grzegorz Rożniecki
-simple_search: http://google.com/search
+simple_search: https://www.google.com/search
 description:
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
