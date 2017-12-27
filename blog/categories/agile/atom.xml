@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
+<feed xmlns="https://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: agile | Yet another programming blog]]></title>
-  <link href="http://xaerxess.pl/blog/categories/agile/atom.xml" rel="self"/>
-  <link href="http://xaerxess.pl/"/>
-  <updated>2014-06-27T21:22:33+02:00</updated>
-  <id>http://xaerxess.pl/</id>
+  <link href="https://xaerxess.pl/blog/categories/agile/atom.xml" rel="self"/>
+  <link href="https://xaerxess.pl/"/>
+  <updated>2017-12-27T18:03:54+01:00</updated>
+  <id>https://xaerxess.pl/</id>
   <author>
     <name><![CDATA[Grzegorz Rożniecki]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[More Agile than Java - Keynotes from 33rd Degree 2014]]></title>
-    <link href="http://xaerxess.pl/blog/2014/06/27/more-agile-than-java-keynotes-from-33rd-degree-2014.html"/>
+    <link href="https://xaerxess.pl/blog/2014/06/27/more-agile-than-java-keynotes-from-33rd-degree-2014.html"/>
     <updated>2014-06-27T14:44:02+02:00</updated>
-    <id>http://xaerxess.pl/blog/2014/06/27/more-agile-than-java-keynotes-from-33rd-degree-2014</id>
+    <id>https://xaerxess.pl/blog/2014/06/27/more-agile-than-java-keynotes-from-33rd-degree-2014</id>
     <content type="html"><![CDATA[<p>Few weeks ago, on June 9th-11th, I attended <a href="http://2014.33degree.org/">33rd Degree Conference 2014</a> &ndash; a big Java event held in Kraków. It was my first programming conference ever, and I was stunned how awesome it was. I had a great time, met some nice people, had plenty interesting conversations and listened to many inspiring talks. I&rsquo;d like to share my thoughts on 33rd Degree&rsquo;s keynotes, which, as it turned out, weren&rsquo;t strictly about Java or any other concrete programming language, but they concentrated on a developer &ndash; how he should work, what he should pursue, and how should he cooperate with business and management &ndash; all this as a way of achieving satisfaction and fulfillment.<!-- more --></p>
 
 <h1>Think for yourself</h1>
@@ -27,7 +27,7 @@
 <blockquote class="twitter-tweet" lang="en"><p>&quot;Give people permission and tools to pursue their passion&quot; excellent advise by <a href="https://twitter.com/mpoppendieck">@mpoppendieck</a> at <a href="https://twitter.com/hashtag/33rdDegree?src=hash">#33rdDegree</a></p>&mdash; Arun Gupta (@arungupta) <a href="https://twitter.com/arungupta/statuses/475906411126599680">June 9, 2014</a></blockquote>
 
 
-<script async src="http://xaerxess.pl//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script async src="https://xaerxess.pl//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 <p>In the example Marry gave from her experience, the company which successfully adopted lean thinking (and development) techniques, reduced time spent on design defining meetings from 20% to 5% time spent on the project, leaving much more space for actual development <strong>and</strong> much more space for developers to do what they think is best for clients. This is quite similar to what Agile says, and for example Scrum does.</p>
@@ -35,7 +35,7 @@
 <blockquote class="twitter-tweet" lang="en"><p>&quot;The shadow of the Future&quot; by <a href="https://twitter.com/mpoppendieck">@mpoppendieck</a> : Economics 3.0, Passion, Motivation and teamwork! <a href="https://twitter.com/hashtag/33degree?src=hash">#33degree</a> <a href="http://t.co/mzdOKPwGkU">pic.twitter.com/mzdOKPwGkU</a></p>&mdash; Stephan Janssen (@Stephan007) <a href="https://twitter.com/Stephan007/statuses/475909639775989761">June 9, 2014</a></blockquote>
 
 
-<script async src="http://xaerxess.pl//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script async src="https://xaerxess.pl//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 <p>Developers should create right thing to develop, so adding a value to the product and then being able to access feedback <em>from</em> clients (to constantly improve software). Only that kind of attitude allows programmers to achieve satisfaction from work and what is called &ldquo;the flow&rdquo;, a psychology term introduced by Mihaly Csikszentmihalyi (who is <em>obviously</em> Hungarian). <a href="http://en.wikipedia.org/wiki/Flow_(psychology">From Wikipedia</a>) (emphasis mine):</p>
@@ -44,11 +44,11 @@
 
 <p>Flow, according to Mary, is each programmers goal, a nirvana everybody should should seek and chase.</p>
 
-<p><img src="http://upload.wikimedia.org/wikipedia/commons/f/f6/Challenge_vs_skill.svg" alt="Challenge vs. skill" /></p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Challenge_vs_skill.svg" alt="Challenge vs. skill" /></p>
 
 <p>Since flow appeared in almost every keynote on 33rd Degree, I think it&rsquo;s quite important for each programmer to understand what this diagram means &ndash; more skilled developer <strong>needs</strong> new challenges, or else he won&rsquo;t be satisfied.</p>
 
-<p>As final advice Marry told us to remember about <a href="http://c2.com/cgi/wiki?SharpenTheSaw">sharpening the saw</a> &ndash; an ability to improve programming skills by doing something which <em>isn&rsquo;t</em> programming. <a href="http://blog.codinghorror.com/sharpening-the-saw/">Jeff Atwood</a> mentions reading programming blogs, <a href="https://news.ycombinator.com/">HN</a>, <a href="http://www.reddit.com/r/programming">proggit</a>; I&rsquo;d add to that list writing on <a href="http://stackoverflow.com/">StackOverflow</a>, following other devs on <a href="https://twitter.com">Twitter</a>, and (starting from 33rd Degree) attending to conferences.</p>
+<p>As final advice Marry told us to remember about <a href="http://c2.com/cgi/wiki?SharpenTheSaw">sharpening the saw</a> &ndash; an ability to improve programming skills by doing something which <em>isn&rsquo;t</em> programming. <a href="https://blog.codinghorror.com/sharpening-the-saw/">Jeff Atwood</a> mentions reading programming blogs, <a href="https://news.ycombinator.com/">HN</a>, <a href="https://www.reddit.com/r/programming">proggit</a>; I&rsquo;d add to that list writing on <a href="https://stackoverflow.com/">StackOverflow</a>, following other devs on <a href="https://twitter.com">Twitter</a>, and (starting from 33rd Degree) attending to conferences.</p>
 
 <h1>Managers are from Mars, Developers are from Venus</h1>
 
@@ -70,14 +70,14 @@
 
 <p>Ted compared flow to sleep &ndash; you can&rsquo;t force yourself to sleep, you can only setup appropriate conditions for it. And meetings with management, phone calls, etc. don&rsquo;t help in that.</p>
 
-<p>The keynote was also a (small) rant on role of project managers role in modern software development. Well, it wasn&rsquo;t a rant <em>per se</em>, but rather small history lesson about &ldquo;scientific management&rdquo; and its creator, <a href="http://en.wikipedia.org/wiki/Frederick_Winslow_Taylor">Frederick Taylor</a>. Long story short: The entire industry is broken because &ldquo;scientific management&rdquo; was a lie. Taylor authored &ldquo;The Principles of Scientific Management&rdquo; which consisted a basis for what is nowadays taught on Harvard, but his research was actually mostly made up! His &ldquo;science&rdquo; wasn&rsquo;t really science, since it couldn&rsquo;t be validated, but nonetheless his ideas spread around the world and still are by many considered as valid.</p>
+<p>The keynote was also a (small) rant on role of project managers role in modern software development. Well, it wasn&rsquo;t a rant <em>per se</em>, but rather small history lesson about &ldquo;scientific management&rdquo; and its creator, <a href="https://en.wikipedia.org/wiki/Frederick_Winslow_Taylor">Frederick Taylor</a>. Long story short: The entire industry is broken because &ldquo;scientific management&rdquo; was a lie. Taylor authored &ldquo;The Principles of Scientific Management&rdquo; which consisted a basis for what is nowadays taught on Harvard, but his research was actually mostly made up! His &ldquo;science&rdquo; wasn&rsquo;t really science, since it couldn&rsquo;t be validated, but nonetheless his ideas spread around the world and still are by many considered as valid.</p>
 
 <p>There was also a story about <a href="en.wikipedia.org/wiki/Scott_Adams">Scott Adams</a>, creator of <a href="dilbert.com">Dilbert</a>, which basically showed how fuzzy is project management as a discipline. Funny and not funny at the same time.</p>
 
 <blockquote class="twitter-tweet" lang="en"><p>Last 20 years of dilbert is about you. Please don&#39;t cry <a href="https://twitter.com/tedneward">@tedneward</a> at <a href="https://twitter.com/hashtag/33degree?src=hash">#33degree</a> <a href="https://twitter.com/hashtag/33rdDegree?src=hash">#33rdDegree</a></p>&mdash; Michał Gruca (@michalgruca) <a href="https://twitter.com/michalgruca/statuses/475917017460273152">June 9, 2014</a></blockquote>
 
 
-<script async src="http://xaerxess.pl//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script async src="https://xaerxess.pl//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 <h1>Power to the Programmers</h1>
@@ -120,12 +120,12 @@
 <blockquote class="twitter-tweet" lang="en"><p>&quot;We&#39;re toolmakers, what we do changes lives, it matters.&quot; <a href="https://twitter.com/dimsumthinking">@dimsumthinking</a> <a href="https://twitter.com/hashtag/33degree?src=hash">#33degree</a></p>&mdash; Venkat Subramaniam (@venkat_s) <a href="https://twitter.com/venkat_s/statuses/476285071046225920">June 10, 2014</a></blockquote>
 
 
-<script async src="http://xaerxess.pl//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script async src="https://xaerxess.pl//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 <p>Yes, developers should change lives, but since changing whole world is impossible, we should change at least one life &ndash; it should be our target. As an example, Daniel showed one of Apple&rsquo;s ads &ndash; it was not about product itself, but rather what the product gives to the world. It adds a value to a user, <em>the</em> user. The Apple ad, <em>Think different</em>, in which Steve Jobs himself presented many modern visionaries, people who changed the world, like Albert Einstein, John Lennon or Dalai Lama. Each of them was &ldquo;crazy&rdquo;, crazy enough to think they can change the world.</p>
 
-<iframe width="420" height="315" src="http://xaerxess.pl//www.youtube.com/embed/Rzu6zeLSWq8" frameborder="0" allowfullscreen></iframe>
+<iframe width="420" height="315" src="https://xaerxess.pl//www.youtube.com/embed/Rzu6zeLSWq8" frameborder="0" allowfullscreen></iframe>
 
 
 <p>We can succeed only if we focus on an individual, try to have closer relationship with client and pay attention to details. Daniel&rsquo;s talk wasn&rsquo;t just about slogans, it was his life manifesto, his personal experience, which made whole keynote very genuine and honest.</p>
@@ -143,7 +143,7 @@
 <blockquote class="twitter-tweet" lang="en"><p>&quot;Do you have homework?&quot;&#10;&quot;Yes.&quot;&#10;&quot;Have you done it?&quot;&#10;&quot;Yes.&quot;&#10;&quot;Can you show me?&quot;&#10;... &lt;WIP&gt;&#10;- lazy evaluation explained by <a href="https://twitter.com/venkat_s">@venkat_s</a> <a href="https://twitter.com/hashtag/33rdDegree?src=hash">#33rdDegree</a></p>&mdash; Grzegorz Rożniecki (@xaerxess) <a href="https://twitter.com/xaerxess/statuses/476718893965524992">June 11, 2014</a></blockquote>
 
 
-<script async src="http://xaerxess.pl//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script async src="https://xaerxess.pl//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 <p>If you weren&rsquo;t on this keynote, you should watch it when it&rsquo;s published, because all of that was told with help of audience member, <a href="https://twitter.com/mmskrzyp">Maria</a>, who was asked by Venkat to volunteer and do the keynote with him.</p>
@@ -151,14 +151,14 @@
 <blockquote class="twitter-tweet" lang="en"><p>&quot;<a href="https://twitter.com/tomekcejner">@tomekcejner</a>: Today <a href="https://twitter.com/hashtag/33rdDegree?src=hash">#33rdDegree</a> <a href="https://twitter.com/mmskrzyp">@mmskrzyp</a> was pair-presenting with <a href="https://twitter.com/venkat_s">@venkat_s</a> - learn from masters ;) <a href="http://t.co/kpUs3wggfY">pic.twitter.com/kpUs3wggfY</a>&quot; <a href="https://twitter.com/hashtag/100happydays?src=hash">#100happydays</a></p>&mdash; Maria Skrzypek (@mmskrzyp) <a href="https://twitter.com/mmskrzyp/statuses/476716987121672192">June 11, 2014</a></blockquote>
 
 
-<script async src="http://xaerxess.pl//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script async src="https://xaerxess.pl//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 <p>The keynote turned out to be fantastic and I really look forward to see more Venkat&rsquo;s talks.</p>
 
 <h1>Get Unblocked</h1>
 
-<iframe src="http://xaerxess.pl//www.slideshare.net/slideshow/embed_code/35759886?rel=0" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<iframe src="https://xaerxess.pl//www.slideshare.net/slideshow/embed_code/35759886?rel=0" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
 
 
 <p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/denisejacobs/get-unblocked-33rd-degree-conference" title="Get Unblocked - 33rd Degree Conference" target="_blank">Get Unblocked &ndash; 33rd Degree Conference</a> </strong> from <strong><a href="http://www.slideshare.net/denisejacobs" target="_blank">Denise Jacobs</a></strong> </div></p>
@@ -170,7 +170,7 @@
 <blockquote class="twitter-tweet" lang="en"><p>&quot;Programmers are alchemists - they take ideas and transform them to something tangible.&quot; <a href="https://twitter.com/denisejacobs">@denisejacobs</a> in <a href="https://twitter.com/hashtag/GetUnblocked?src=hash">#GetUnblocked</a> keynote <a href="https://twitter.com/hashtag/33rdDegree?src=hash">#33rdDegree</a></p>&mdash; Grzegorz Rożniecki (@xaerxess) <a href="https://twitter.com/xaerxess/statuses/476729277728456704">June 11, 2014</a></blockquote>
 
 
-<script async src="http://xaerxess.pl//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script async src="https://xaerxess.pl//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 <p>So programming feels like magic. But it&rsquo;s not. It&rsquo;s magical, but not magic, because developers use creativity for everyday work. In real life we are distracted by management, bureaucracy, time constraints, hard working conditions, etc. So how achieve flow? There are many ways, Denise mentioned several practical examples:</p>
@@ -189,7 +189,7 @@
 <blockquote class="twitter-tweet" lang="en"><p>Highly inspiring talk on unblocking creativity by <a href="https://twitter.com/denisejacobs">@denisejacobs</a> at <a href="https://twitter.com/hashtag/33rdDegree?src=hash">#33rdDegree</a> <a href="http://t.co/w3KNLKaMWN">pic.twitter.com/w3KNLKaMWN</a></p>&mdash; Maria Skrzypek (@mmskrzyp) <a href="https://twitter.com/mmskrzyp/statuses/476741716209598465">June 11, 2014</a></blockquote>
 
 
-<script async src="http://xaerxess.pl//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script async src="https://xaerxess.pl//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 <p>Very often we have flawed and false picture of ourselves, but obviously &ldquo;You can&rsquo;t compare your insides to other people outsides&rdquo; &ndash; our &ldquo;inner critic&rdquo; does comparisons wrong. What we can do is to move forward, unblock ourselves and be creative, then the joy will come.</p>
@@ -207,7 +207,7 @@
 <blockquote class="twitter-tweet" lang="en"><p>Nearly 1200 coffees served by <a href="https://twitter.com/ThisIsSpartez">@ThisIsSpartez</a> drunk at <a href="https://twitter.com/hashtag/33rdDegree?src=hash">#33rdDegree</a>. I hope you enjoyed it.</p>&mdash; Wojciech Seliga (@wseliga) <a href="https://twitter.com/wseliga/statuses/476728687124287488">June 11, 2014</a></blockquote>
 
 
-<script async src="http://xaerxess.pl//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script async src="https://xaerxess.pl//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 <p>It seems I consumed almost 1% of coffees served there :)</p>
@@ -215,7 +215,7 @@
 <hr/>
 <ol>
 <li id="fn:1">
-<p><a href="http://martinfowler.com/bliki/AgileVersusLean.html">Quick introduction by Martin Fowler</a>: <em>You don&rsquo;t do agile or lean you do agile and lean</em>.<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<p><a href="https://martinfowler.com/bliki/AgileVersusLean.html">Quick introduction by Martin Fowler</a>: <em>You don&rsquo;t do agile or lean you do agile and lean</em>.<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
 </ol>
 </div>
 

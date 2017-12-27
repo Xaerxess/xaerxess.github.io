@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
+<feed xmlns="https://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Perl | Yet another programming blog]]></title>
-  <link href="http://xaerxess.pl/blog/categories/perl/atom.xml" rel="self"/>
-  <link href="http://xaerxess.pl/"/>
-  <updated>2014-06-27T21:22:33+02:00</updated>
-  <id>http://xaerxess.pl/</id>
+  <link href="https://xaerxess.pl/blog/categories/perl/atom.xml" rel="self"/>
+  <link href="https://xaerxess.pl/"/>
+  <updated>2017-12-27T18:03:54+01:00</updated>
+  <id>https://xaerxess.pl/</id>
   <author>
     <name><![CDATA[Grzegorz Rożniecki]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[How I hijacked a CPAN module]]></title>
-    <link href="http://xaerxess.pl/blog/2014/03/12/how-i-hijacked-a-cpan-module.html"/>
+    <link href="https://xaerxess.pl/blog/2014/03/12/how-i-hijacked-a-cpan-module.html"/>
     <updated>2014-03-12T19:01:51+01:00</updated>
-    <id>http://xaerxess.pl/blog/2014/03/12/how-i-hijacked-a-cpan-module</id>
+    <id>https://xaerxess.pl/blog/2014/03/12/how-i-hijacked-a-cpan-module</id>
     <content type="html"><![CDATA[<p>Today Neil Bowers (<a href="https://twitter.com/neilbowers/">@neilbowers</a>) wrote a blog post titled <a href="http://neilb.org/2014/03/11/uploading-01.html">&ldquo;What happens when you upload to CPAN?&rdquo;</a> &ndash; a sneak peek at the very last part of module releasing process (when you do <code>cpan-upload</code> and recieve these two strange emails). Although I&rsquo;ve already released few distributions, <a href="https://pause.perl.org">PAUSE</a> still seems to me as a mysterious tool with design (i.e. web interface) from previous epoch<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>, but somehow capable of managing over 29000 distributions maintained by over 11000 authors. <!-- more -->What intrigued me in Neil&rsquo;s article was the &ldquo;hairy&rdquo; part (namespace indexer), particularly a conclusion (<em>&ldquo;the permissions check should be separate from, and earlier than, the indexing stage&rdquo;</em>) and these three points:</p>
 
 <blockquote><ul>
@@ -49,7 +49,7 @@ YAML::AppConfig,XAERXESS,f
 
 <p><strong>Follow-up</strong></p>
 
-<p>I didn&rsquo;t mean to disclose potential security threat, and I&rsquo;m sure I&rsquo;ll be more careful in the future writing about similar issues. Luckily, as you can see <a href="http://localhost:4000/blog/2014/03/12/how-i-hijacked-a-cpan-module.html#comment-1283194094">in the comment</a>, <a href="https://twitter.com/rjbs">@rjbs</a> was in the right place in the right time (i.e. <a href="http://act.qa-hackathon.org/qa2014/">Perl QA Hackaton 2014</a>) and <a href="https://github.com/andk/pause/commit/d3e76f314c33570b2670b07eb7c2a93ccfcec66a">fixed the bug</a> in PAUSE.</p>
+<p>I didn&rsquo;t mean to disclose potential security threat, and I&rsquo;m sure I&rsquo;ll be more careful in the future writing about similar issues. Luckily, as you can see <a href="/blog/2014/03/12/how-i-hijacked-a-cpan-module.html#comment-1283194094">in the comment</a>, <a href="https://twitter.com/rjbs">@rjbs</a> was in the right place in the right time (i.e. <a href="http://act.qa-hackathon.org/qa2014/">Perl QA Hackaton 2014</a>) and <a href="https://github.com/andk/pause/commit/d3e76f314c33570b2670b07eb7c2a93ccfcec66a">fixed the bug</a> in PAUSE.</p>
 
 <p>To be honest, I looked at PAUSE code after I had &ldquo;hijacked&rdquo; module, but setting up PAUSE is <a href="https://twitter.com/rjbs/status/444185178811146240">&ldquo;Very Hard™&rdquo;</a>. For example, I didn&rsquo;t have any <a href="https://github.com/andk/pause/blob/66f72204e24957415f5d2aca3fba519661beb2d8/doc/README#L142">Apache 1.3 with mod_perl1</a> ready at hand, nor any spare time to compile it. Hope it&rsquo;ll be easier in the future.</p>
 
@@ -69,9 +69,9 @@ YAML::AppConfig,XAERXESS,f
   
   <entry>
     <title type="html"><![CDATA[Using ExtUtils::MakeMaker for my first co-maint release - Bloom::Filter]]></title>
-    <link href="http://xaerxess.pl/blog/2014/02/28/using-extutils-makemaker-for-my-first-co-maint-release-bloom-filter.html"/>
+    <link href="https://xaerxess.pl/blog/2014/02/28/using-extutils-makemaker-for-my-first-co-maint-release-bloom-filter.html"/>
     <updated>2014-02-28T16:32:34+01:00</updated>
-    <id>http://xaerxess.pl/blog/2014/02/28/using-extutils-makemaker-for-my-first-co-maint-release-bloom-filter</id>
+    <id>https://xaerxess.pl/blog/2014/02/28/using-extutils-makemaker-for-my-first-co-maint-release-bloom-filter</id>
     <content type="html"><![CDATA[<p>After over 7 years, a new release of <a href="https://metacpan.org/release/XAERXESS/Bloom-Filter-1.1"><code>Bloom::Filter</code></a> is out! Thanks to Maciej Ceglowski (<a href="https://metacpan.org/author/MCEGLOWS">MCEGLOWS</a> / <a href="https://twitter.com/baconmeteor">@baconmeteor</a>), who was kind enough to give me co-maint permissions. If you don&rsquo;t know what bloom filter is<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>, please read <a href="http://www.perl.com/pub/2004/04/08/bloom_filters.html">&ldquo;Using Bloom Filters&rdquo;</a> (article written by Maciej in 2004, but still up-to-date and very interesting). Instead of writing about bloom filters, in this blog post I&rsquo;d like to concentrate on Perl module release process, as a part of my personal &ldquo;diving into Perl&rdquo; process.</p>
 
 <!-- more -->
@@ -101,7 +101,7 @@ YAML::AppConfig,XAERXESS,f
 
 <p>So I found out EUMM is not a distribution making swiss knife, just a tool for managing Makefile creation process. That said, I don&rsquo;t see a reason to use &ldquo;raw&rdquo; <code>ExtUtils::MakeMaker</code> or <code>Module::Build</code> plus some release tool instead of <code>Dist::Milla</code> &ndash; for my needs it&rsquo;s more than enough, it takes care of all boilercode <em>I</em> don&rsquo;t need to write, does all git-related release stuff, and changes version all over module.<sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup></p>
 
-<p>Speaking of versioning &ndash; according to <a href="http://www.dagolden.com/index.php/369/version-numbers-should-be-boring/">David Golden&rsquo;s article</a>, it should be a boring task. It wasn&rsquo;t, at least this time. I had to face two (actually three, third was, as always in Perl, <a href="http://en.wikipedia.org/wiki/There's_more_than_one_way_to_do_it">TIMTOWTDI</a>) issues here:</p>
+<p>Speaking of versioning &ndash; according to <a href="http://www.dagolden.com/index.php/369/version-numbers-should-be-boring/">David Golden&rsquo;s article</a>, it should be a boring task. It wasn&rsquo;t, at least this time. I had to face two (actually three, third was, as always in Perl, <a href="https://en.wikipedia.org/wiki/There's_more_than_one_way_to_do_it">TIMTOWTDI</a>) issues here:</p>
 
 <ul>
 <li>There was already <a href="https://metacpan.org/release/KJETIL/Bloom-Filter-1.1">1.1 release on BackPAN</a> (How is that possible?)</li>
@@ -123,7 +123,7 @@ say $version;
 <hr/>
 <ol>
 <li id="fn:1">
-<p>In few words: bloom filter is a space-efficient probabilistic data structure, which is used to test whether an element is a member of a set (<em><a href="http://en.wikipedia.org/wiki/Bloom_filter">from Wikipedia</a></em>).<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<p>In few words: bloom filter is a space-efficient probabilistic data structure, which is used to test whether an element is a member of a set (<em><a href="https://en.wikipedia.org/wiki/Bloom_filter">from Wikipedia</a></em>).<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
 <li id="fn:2">
 <p>Actually I don&rsquo;t know how to filter closed issues which were fixed in 1.1 on RT&hellip; Any help?<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
 <li id="fn:3">
@@ -140,12 +140,12 @@ say $version;
   
   <entry>
     <title type="html"><![CDATA[New module on CPAN - Task::BeLike::XAERXESS]]></title>
-    <link href="http://xaerxess.pl/blog/2014/01/31/new-module-on-cpan-task-belike-xaerxess.html"/>
+    <link href="https://xaerxess.pl/blog/2014/01/31/new-module-on-cpan-task-belike-xaerxess.html"/>
     <updated>2014-01-31T22:38:02+01:00</updated>
-    <id>http://xaerxess.pl/blog/2014/01/31/new-module-on-cpan-task-belike-xaerxess</id>
+    <id>https://xaerxess.pl/blog/2014/01/31/new-module-on-cpan-task-belike-xaerxess</id>
     <content type="html"><![CDATA[<p><a href="https://metacpan.org/pod/perlbrew">Perlbrew</a> is a great module. I use it on every machine &ndash; it lets me install modern Perl versions on systems which ship with ancient a.k.a. good-old perls like 5.8 or even those from previous millennium. But there comes a problem &ndash; every perlbrewed perl has a separate environment and it lacks all CPAN goodies you installed and used earlier. Plus, if you have few machines and / or like to experiment with various operating systems (like me), you have to install modules you use again and again.</p>
 
-<p>To address this issue I&rsquo;ve released <a href="https://metacpan.org/release/Task-BeLike-XAERXESS"><code>Task::BeLike::XAERXESS</code></a>. It&rsquo;s a <a href="Task"><code>Task</code></a> module which has a simple purpose &ndash; it installs a module bundle <em>I</em> frequently use. What&rsquo;s more, because I uploaded it to <a href="http://www.cpan.org/">CPAN</a>, <em>you</em> can use install, try or modify it (the <a href="https://github.com/Xaerxess/Task-BeLike-XAERXESS">source code is on GitHub</a>).</p>
+<p>To address this issue I&rsquo;ve released <a href="https://metacpan.org/release/Task-BeLike-XAERXESS"><code>Task::BeLike::XAERXESS</code></a>. It&rsquo;s a <a href="Task"><code>Task</code></a> module which has a simple purpose &ndash; it installs a module bundle <em>I</em> frequently use. What&rsquo;s more, because I uploaded it to <a href="https://www.cpan.org/">CPAN</a>, <em>you</em> can use install, try or modify it (the <a href="https://github.com/Xaerxess/Task-BeLike-XAERXESS">source code is on GitHub</a>).</p>
 
 <!-- more -->
 
@@ -160,12 +160,12 @@ say $version;
   
   <entry>
     <title type="html"><![CDATA[MANIFEST - or (future) content of this blog]]></title>
-    <link href="http://xaerxess.pl/blog/2014/01/27/manifest-or-future-content-of-this-blog.html"/>
+    <link href="https://xaerxess.pl/blog/2014/01/27/manifest-or-future-content-of-this-blog.html"/>
     <updated>2014-01-27T00:04:43+01:00</updated>
-    <id>http://xaerxess.pl/blog/2014/01/27/manifest-or-future-content-of-this-blog</id>
-    <content type="html"><![CDATA[<p>I&rsquo;m starting a programming blog (again). I don&rsquo;t know if it&rsquo;ll be successful (where <em>successful</em> means <em>updated regularly</em> for me), but I&rsquo;d like to begin with meta-post about what I <em>want</em> to have here. Since I&rsquo;ve been (proffesionally) working as a <a href="http://www.perl.org/">Perl</a>, Java and JavaScript developer for few years, vast amount of topics will be about these programming languages, with Perl being main one.</p>
+    <id>https://xaerxess.pl/blog/2014/01/27/manifest-or-future-content-of-this-blog</id>
+    <content type="html"><![CDATA[<p>I&rsquo;m starting a programming blog (again). I don&rsquo;t know if it&rsquo;ll be successful (where <em>successful</em> means <em>updated regularly</em> for me), but I&rsquo;d like to begin with meta-post about what I <em>want</em> to have here. Since I&rsquo;ve been (proffesionally) working as a <a href="https://www.perl.org/">Perl</a>, Java and JavaScript developer for few years, vast amount of topics will be about these programming languages, with Perl being main one.</p>
 
-<p>Short clarification here: Perl has a facinating community with really, really great developers, and if you look back to previous sentence you&rsquo;ll see that I only linked to Perl webpage, contrary to Java and JavaScript. The reason is simple: <!-- more --> these two J* languages have no proper webpages and no <em>(open-source)</em> community. You can go to java.<strong>com</strong> and click big red download button, but that&rsquo;s all. Google &ldquo;java&rdquo; and you&rsquo;ll see &ldquo;Oracle&rdquo; and &ldquo;™&rdquo; higher than &ldquo;OpenJDK&rdquo;. Typing JavaScript in Google gives you <strong>zero</strong> language/community hits (let me just say that w3schools is first one); <a href="http://www.ecmascript.org/">ECMAScript</a> is all about standards and many JS devs aren&rsquo;t be able to tell what ECMAScript is.</p>
+<p>Short clarification here: Perl has a facinating community with really, really great developers, and if you look back to previous sentence you&rsquo;ll see that I only linked to Perl webpage, contrary to Java and JavaScript. The reason is simple: <!-- more --> these two J* languages have no proper webpages and no <em>(open-source)</em> community. You can go to java.<strong>com</strong> and click big red download button, but that&rsquo;s all. Google &ldquo;java&rdquo; and you&rsquo;ll see &ldquo;Oracle&rdquo; and &ldquo;™&rdquo; higher than &ldquo;OpenJDK&rdquo;. Typing JavaScript in Google gives you <strong>zero</strong> language/community hits (let me just say that w3schools is first one); <a href="https://www.ecmascript.org/">ECMAScript</a> is all about standards and many JS devs aren&rsquo;t be able to tell what ECMAScript is.</p>
 
 <p>On the other hand, googling &ldquo;perl&rdquo; gives you hits like:</p>
 
@@ -181,11 +181,11 @@ say $version;
 
 <p>from which <strong>every single resource is awesome</strong> &ndash; if you&rsquo;ve been using Perl for a while, you just can&rsquo;t <em>not</em> appreciate whole ecosystem and say <em>Perl is dead</em> because it&rsquo;s simply not true at all.</p>
 
-<p>Besides writing about software engineering and programming languages, because I believe in free and open-source software and culture, I&rsquo;ll probably cover these topics, too. (Lately <a href="https://github.com/Xaerxess">I started contributing</a> to various open-source projects, I&rsquo;ve been using GNU/Linux <a href="http://linuxcounter.net/user/407987.html">for almost nine years</a>, I really enjoy both). For now, I&rsquo;d like to point you to <a href="http://pjf.id.au/ethics/2013/12/28/do-not-stifle-innovation.html">this blog post</a> (by <a href="https://twitter.com/pjf">@pjf</a>) which I fully agree with:</p>
+<p>Besides writing about software engineering and programming languages, because I believe in free and open-source software and culture, I&rsquo;ll probably cover these topics, too. (Lately <a href="https://github.com/Xaerxess">I started contributing</a> to various open-source projects, I&rsquo;ve been using GNU/Linux <a href="https://linuxcounter.net/user/407987.html">for almost nine years</a>, I really enjoy both). For now, I&rsquo;d like to point you to <a href="https://pjf.id.au/ethics/2013/12/28/do-not-stifle-innovation.html">this blog post</a> (by <a href="https://twitter.com/pjf">@pjf</a>) which I fully agree with:</p>
 
 <blockquote><p>&ldquo;While I’ve always known open source software is great, I’m increasingly starting to appreciate that open source developers are also great.&rdquo;</p></blockquote>
 
-<p>What&rsquo;s more, I&rsquo;d like to share everything on this site for free, so I&rsquo;m making all my code available under <a href="http://opensource.org/licenses/MIT">MIT license</a> (unless marked otherwise) and all my writing available under <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution license</a>. You can grab the code of this blog is on <a href="https://github.com/Xaerxess/xaerxess.github.io">GitHub</a>, use it, fork it, modify it, etc. I&rsquo;ll also be grateful for all suggestions and for spelling or grammar fixes because blogging in English and not being native English speaker is a challenge.</p>
+<p>What&rsquo;s more, I&rsquo;d like to share everything on this site for free, so I&rsquo;m making all my code available under <a href="https://opensource.org/licenses/MIT">MIT license</a> (unless marked otherwise) and all my writing available under <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution license</a>. You can grab the code of this blog is on <a href="https://github.com/Xaerxess/xaerxess.github.io">GitHub</a>, use it, fork it, modify it, etc. I&rsquo;ll also be grateful for all suggestions and for spelling or grammar fixes because blogging in English and not being native English speaker is a challenge.</p>
 
 <p>Anyway, enjoy reading, consider leaving a comment or following me on some social media, and have a nice day.</p>
 ]]></content>

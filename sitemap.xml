@@ -1,71 +1,75 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://xaerxess.pl/blog/2014/01/27/manifest-or-future-content-of-this-blog.html</loc>
-        <lastmod>2014-06-27T15:08:51+02:00</lastmod>
-    </url>
-    <url>
-        <loc>http://xaerxess.pl/blog/2014/01/31/new-module-on-cpan-task-belike-xaerxess.html</loc>
-        <lastmod>2014-06-27T15:08:51+02:00</lastmod>
-    </url>
-    <url>
-        <loc>http://xaerxess.pl/blog/2014/02/23/about-blogging-a-case-study.html</loc>
-        <lastmod>2014-06-27T15:08:51+02:00</lastmod>
+        <loc>
+            https://xaerxess.pl/blog/2014/01/27/manifest-or-future-content-of-this-blog.html
+        </loc>
+        <lastmod>2017-12-27T18:02:08+01:00</lastmod>
     </url>
     <url>
         <loc>
-            http://xaerxess.pl/blog/2014/02/28/using-extutils-makemaker-for-my-first-co-maint-release-bloom-filter.html
+            https://xaerxess.pl/blog/2014/01/31/new-module-on-cpan-task-belike-xaerxess.html
         </loc>
-        <lastmod>2014-06-27T15:08:51+02:00</lastmod>
+        <lastmod>2017-12-27T18:02:08+01:00</lastmod>
     </url>
     <url>
-        <loc>http://xaerxess.pl/blog/2014/03/12/how-i-hijacked-a-cpan-module.html</loc>
-        <lastmod>2014-06-27T15:08:51+02:00</lastmod>
+        <loc>https://xaerxess.pl/blog/2014/02/23/about-blogging-a-case-study.html</loc>
+        <lastmod>2017-12-27T18:02:08+01:00</lastmod>
     </url>
     <url>
         <loc>
-            http://xaerxess.pl/blog/2014/06/27/more-agile-than-java-keynotes-from-33rd-degree-2014.html
+            https://xaerxess.pl/blog/2014/02/28/using-extutils-makemaker-for-my-first-co-maint-release-bloom-filter.html
         </loc>
-        <lastmod>2014-06-27T21:21:46+02:00</lastmod>
+        <lastmod>2017-12-27T18:02:08+01:00</lastmod>
     </url>
     <url>
-        <loc>http://xaerxess.pl/assets/bootstrap/getting-started.html</loc>
-        <lastmod>2014-06-27T15:08:51+02:00</lastmod>
+        <loc>https://xaerxess.pl/blog/2014/03/12/how-i-hijacked-a-cpan-module.html</loc>
+        <lastmod>2017-12-27T18:02:08+01:00</lastmod>
     </url>
     <url>
-        <loc>http://xaerxess.pl/assets/bootstrap/</loc>
-        <lastmod>2014-06-27T21:21:46+02:00</lastmod>
+        <loc>
+            https://xaerxess.pl/blog/2014/06/27/more-agile-than-java-keynotes-from-33rd-degree-2014.html
+        </loc>
+        <lastmod>2017-12-27T18:03:34+01:00</lastmod>
     </url>
     <url>
-        <loc>http://xaerxess.pl/assets/bootstrap/about.html</loc>
-        <lastmod>2014-06-27T15:08:51+02:00</lastmod>
+        <loc>https://xaerxess.pl/assets/bootstrap/about.html</loc>
+        <lastmod>2017-12-27T18:02:08+01:00</lastmod>
     </url>
     <url>
-        <loc>http://xaerxess.pl/assets/bootstrap/javascript.html</loc>
-        <lastmod>2014-06-27T15:08:51+02:00</lastmod>
+        <loc>https://xaerxess.pl/assets/bootstrap/components.html</loc>
+        <lastmod>2017-12-27T18:02:08+01:00</lastmod>
     </url>
     <url>
-        <loc>http://xaerxess.pl/assets/bootstrap/css.html</loc>
-        <lastmod>2014-06-27T15:08:51+02:00</lastmod>
+        <loc>https://xaerxess.pl/assets/bootstrap/css.html</loc>
+        <lastmod>2017-12-27T18:02:08+01:00</lastmod>
     </url>
     <url>
-        <loc>http://xaerxess.pl/assets/bootstrap/components.html</loc>
-        <lastmod>2014-06-27T15:08:51+02:00</lastmod>
+        <loc>https://xaerxess.pl/assets/bootstrap/customize.html</loc>
+        <lastmod>2017-12-27T18:02:08+01:00</lastmod>
     </url>
     <url>
-        <loc>http://xaerxess.pl/assets/bootstrap/customize.html</loc>
-        <lastmod>2014-06-27T15:08:51+02:00</lastmod>
+        <loc>https://xaerxess.pl/assets/bootstrap/getting-started.html</loc>
+        <lastmod>2017-12-27T18:02:08+01:00</lastmod>
     </url>
     <url>
-        <loc>http://xaerxess.pl/</loc>
-        <lastmod>2014-06-27T21:21:46+02:00</lastmod>
+        <loc>https://xaerxess.pl/assets/bootstrap/</loc>
+        <lastmod>2017-12-27T18:03:34+01:00</lastmod>
     </url>
     <url>
-        <loc>http://xaerxess.pl/blog/archives/</loc>
-        <lastmod>2014-06-27T21:21:46+02:00</lastmod>
+        <loc>https://xaerxess.pl/assets/bootstrap/javascript.html</loc>
+        <lastmod>2017-12-27T18:02:08+01:00</lastmod>
     </url>
     <url>
-        <loc>http://xaerxess.pl/robots.txt</loc>
-        <lastmod>2014-06-27T15:08:51+02:00</lastmod>
+        <loc>https://xaerxess.pl/blog/archives/</loc>
+        <lastmod>2017-12-27T18:03:34+01:00</lastmod>
+    </url>
+    <url>
+        <loc>https://xaerxess.pl/</loc>
+        <lastmod>2017-12-27T18:03:34+01:00</lastmod>
+    </url>
+    <url>
+        <loc>https://xaerxess.pl/robots.txt</loc>
+        <lastmod>2017-12-27T18:02:08+01:00</lastmod>
     </url>
 </urlset>
